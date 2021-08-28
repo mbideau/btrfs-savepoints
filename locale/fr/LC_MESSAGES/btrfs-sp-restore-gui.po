@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.1\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2021-01-09 17:40+0100\n"
+"PO-Revision-Date: 2020-11-27\n"
+"Last-Translator: Michael Bideau <mica.devel@gmail.com> [France]\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: btrfs_sp_restore_gui.sh:669
+msgid "                            No difference found"
+msgstr "                        Aucune différence trouvée"
+
+#: btrfs_sp_restore_gui.sh:575
+msgid "                            No savepoints found"
+msgstr "                     Pas de point de sauvegarde trouvé"
+
+#: btrfs_sp_restore_gui.sh:489
+msgid "                          No configuration found"
+msgstr "                      Pas de configuration trouvée"
+
+#: btrfs_sp_restore_gui.sh:599
+msgid ""
+"        3 groups of 3 signs ('.', '-', '+', '*'), or a single letter 'v'"
+msgstr ""
+"         3 groupes de 3 signes ('.', '-', '+', '*'), ou une lettre 'v' unique"
+
+#: btrfs_sp_restore_gui.sh:605
+msgid ""
+"        in any of the 3 groups of 3 signs, a dot '.' means nothing, it is "
+"just a visual mark to show that an analysis have been done"
+msgstr ""
+"         dans chacun des 3 groupes de 3 signes, un point '.' ne signifie "
+"rien, c'est simplement une marque visuelle pour indiquer qu'une analyse a "
+"été faite"
+
+#: btrfs_sp_restore_gui.sh:602
+msgid ""
+"        the first/left group of 3 signs, represent the deletions, the more "
+"'-' sign there is the more files were deleted"
+msgstr ""
+"         le premier/gauche groupe de 3 signes, représente les suppressions, "
+"plus il y a de signes '-', plus il y a eu des fichiers supprimés"
+
+#: btrfs_sp_restore_gui.sh:603
+msgid ""
+"        the second/middle group of 3 signs, represent the additions, the "
+"more '+' sign there is the more files were added"
+msgstr ""
+"         le second/milieu groupe de 3 signes, représente les ajouts, plus il "
+"y a de signes '+', plus il y a eu des fichiers ajoutés"
+
+#: btrfs_sp_restore_gui.sh:601
+msgid ""
+"        the single letter 'v' means the savepoint is just a link to the "
+"previous/below savepoint"
+msgstr ""
+"         la lettre 'v' unique signifie que le point de sauvegarde n'est "
+"qu'un lien vers le précédent/dessous"
+
+#: btrfs_sp_restore_gui.sh:604
+msgid ""
+"        the third/right group of 3 signs, represent the modifications, the "
+"more '*' sign there is the more files were modified"
+msgstr ""
+"         le troisème/droite groupe de 3 signes, représente les "
+"modifications, plus il y a de signes '*', plus il y a eu des fichiers "
+"modifiés"
+
+#: btrfs_sp_restore_gui.sh:447
+msgid "       Do you want to restore your system from a previous state ?"
+msgstr "      Voulez-vous restaurer votre système à une date antérieure ?"
+
+#: btrfs_sp_restore_gui.sh:516
+msgid "      use <tab> to move around selection (i.e.: change button)."
+msgstr ""
+"      utilisez <tab> pour déplacer la sélection (càd: changer de bouton)."
+
+#: btrfs_sp_restore_gui.sh:797
+msgid " was not found after the restoration, at :"
+msgstr "n'a pas été trouvé après la restauration :"
+
+#: btrfs_sp_restore_gui.sh:225
+msgid "%s GUI to restore a folder (BTRFS subvolume) at previous state."
+msgstr ""
+"IHM de %s pour restaurer un dossier (sous-volume BTRFS) à un état antérieur."
+
+#: btrfs_sp_restore_gui.sh:288
+msgid "COLUMNS"
+msgstr "COLONNES"
+
+#: btrfs_sp_restore_gui.sh:510 btrfs_sp_restore_gui.sh:596
+#: btrfs_sp_restore_gui.sh:646 btrfs_sp_restore_gui.sh:708
+#: btrfs_sp_restore_gui.sh:739 btrfs_sp_restore_gui.sh:794
+msgid "Cancel"
+msgstr "Annuler"
+
+#: btrfs_sp_restore_gui.sh:542
+msgid ""
+"Collecting savepoints for that configuration, and analyzing their "
+"differences..."
+msgstr "Collecte les points de sauvegardes pour cette configuration, et "
+"analyze leurs différences..."
+
+#: btrfs_sp_restore_gui.sh:710
+msgid "Continue anyway ?"
+msgstr "Continuer quand même ?"
+
+#: btrfs_sp_restore_gui.sh:238 btrfs_sp_restore_gui.sh:252
+#: btrfs_sp_restore_gui.sh:256 btrfs_sp_restore_gui.sh:260
+msgid "Default to"
+msgstr "Par défaut vaut"
+
+#: btrfs_sp_restore_gui.sh:245
+msgid "Default to '%s' binary, then '%s'."
+msgstr "Par défaut c'est le binaire '%s', puis '%s'."
+
+#: btrfs_sp_restore_gui.sh:292
+msgid "Display help message."
+msgstr "Affiche le message d'aide."
+
+#: btrfs_sp_restore_gui.sh:279
+msgid "Example"
+msgstr "Exemple"
+
+#: btrfs_sp_restore_gui.sh:265
+msgid "FILE"
+msgstr "FICHIER"
+
+#: btrfs_sp_restore_gui.sh:358 btrfs_sp_restore_gui.sh:374
+msgid "Fatal error: binary '%s' not found"
+msgstr "Erreur fatale: le binaire '%s' n'a pas été trouvé"
+
+#: btrfs_sp_restore_gui.sh:313
+msgid "Fatal error: invalid option"
+msgstr "Erreur fatal: option invalide"
+
+#: btrfs_sp_restore_gui.sh:368
+msgid "Fatal error: no binary found for handling dialog box (no '%s' nor '%s')"
+msgstr ""
+"Erreur fatal: aucun binaire trouvé pour gérer les boîtes de dialogue (ni "
+"'%s' ni '%s')"
+
+#: btrfs_sp_restore_gui.sh:289
+msgid "Force to treat the console as the specified size."
+msgstr "Forcer le traitement de la console selon la taille spécifiée."
+
+#: btrfs_sp_restore_gui.sh:251
+msgid ""
+"If the kernel is not found in the subvolume, it offers to reboot at the exit."
+msgstr ""
+"Si le noyau n'est pas trouvé dans le sous-volume, cela propose de redémarrer "
+"à la fin."
+
+#: btrfs_sp_restore_gui.sh:267
+msgid "In order to create such a theme file"
+msgstr "Afin de créer un tel thème"
+
+#: btrfs_sp_restore_gui.sh:514
+msgid "Info: use 'arrow keys' to move up/down the list"
+msgstr ""
+"Info: utilisez les 'touches directionnelles' pour vous déplacer en haut/bas "
+"dans la liste"
+
+#: btrfs_sp_restore_gui.sh:598
+msgid "Legend: before each savepoint there are one of the following :"
+msgstr ""
+"Légende: avant chaque point de sauvegarde il y a l'un des éléments suivants :"
+
+#: btrfs_sp_restore_gui.sh:266
+msgid "Load the specified theme file."
+msgstr "Charge le fichier de thème spécifié."
+
+#: btrfs_sp_restore_gui.sh:391
+msgid "Made with time, love and passion by Michael Bideau"
+msgstr "Fait avec du temps, de l'amour, et de la passion par Michael Bideau"
+
+#: btrfs_sp_restore_gui.sh:845
+msgid "More details on the error below."
+msgstr "Plus de détails sur l'erreur ci-dessous."
+
+#: btrfs_sp_restore_gui.sh:295
+msgid "NOTES"
+msgstr "NOTES"
+
+#: btrfs_sp_restore_gui.sh:446
+msgid "No, thank you"
+msgstr "Non, merci"
+
+#: btrfs_sp_restore_gui.sh:229 btrfs_sp_restore_gui.sh:234
+msgid "OPTIONS"
+msgstr "OPTIONS"
+
+#: btrfs_sp_restore_gui.sh:509 btrfs_sp_restore_gui.sh:595
+msgid "Ok"
+msgstr "Ok"
+
+#: btrfs_sp_restore_gui.sh:843
+msgid "Ok, I understand"
+msgstr "Ok, je comprends"
+
+#: btrfs_sp_restore_gui.sh:762
+msgid "Ok, great"
+msgstr "Ok, super"
+
+#: btrfs_sp_restore_gui.sh:488 btrfs_sp_restore_gui.sh:574
+#: btrfs_sp_restore_gui.sh:668 btrfs_sp_restore_gui.sh:686
+msgid "Ok, then"
+msgstr "Ok, compris"
+
+#: btrfs_sp_restore_gui.sh:236 btrfs_sp_restore_gui.sh:240
+#: btrfs_sp_restore_gui.sh:243
+msgid "PATH"
+msgstr "CHEMIN"
+
+#: btrfs_sp_restore_gui.sh:237
+msgid "Path to '%s' binary."
+msgstr "Chemin vers le binaire '%s'."
+
+#: btrfs_sp_restore_gui.sh:241
+msgid "Path to '%s' global configuration."
+msgstr "Chemin vers la configuration global de '%s'."
+
+#: btrfs_sp_restore_gui.sh:244
+msgid "Path to a '%s' binary."
+msgstr "Chemin vers un binaire '%s'."
+
+#: btrfs_sp_restore_gui.sh:742
+msgid "Please confirm"
+msgstr "Confimez SVP"
+
+#: btrfs_sp_restore_gui.sh:255
+msgid "Prefix of the kernel filename."
+msgstr "Préfixe du nom de fichier du noyau."
+
+#: btrfs_sp_restore_gui.sh:263
+msgid "Prefix paths with the specified PATH"
+msgstr "Préfiwer les chemins avec le chemin spécifié"
+
+#: btrfs_sp_restore_gui.sh:288
+msgid "ROWS"
+msgstr "LIGNES"
+
+#: btrfs_sp_restore_gui.sh:801
+msgid "Reboot after exiting this program ?"
+msgstr "Redémarrer après la fin du programme ?"
+
+#: btrfs_sp_restore_gui.sh:248
+msgid "Regular expression to match the name of the '%s' %s configuration."
+msgstr ""
+"Expression régulière pour trouver le nom de la configuration %s de '%s'"
+
+#: btrfs_sp_restore_gui.sh:763
+msgid "Restoration complete"
+msgstr "Restauration complète"
+
+#: btrfs_sp_restore_gui.sh:844
+msgid "Restoration has failed."
+msgstr "La restauration a échoué."
+
+#: btrfs_sp_restore_gui.sh:740
+msgid "Restore the BTRFS subvolume"
+msgstr "Restaurer le sous-volume BTRFS"
+
+#: btrfs_sp_restore_gui.sh:285
+msgid "See also"
+msgstr "Voir aussi"
+
+#: btrfs_sp_restore_gui.sh:647
+msgid "See the differences with the current state ?"
+msgstr "Voir les différences avec l'état actuel ?"
+
+#: btrfs_sp_restore_gui.sh:606
+msgid "Select the savepoint to restore from :"
+msgstr "Sélectionnez le point de sauvegarde pour la restauration :"
+
+#: btrfs_sp_restore_gui.sh:513
+msgid "Select which element you want to restore :"
+msgstr "Sélectionnez l'élément que vous voulez restaurer :"
+
+#: btrfs_sp_restore_gui.sh:799
+msgid "So you will not be able to boot"
+msgstr "Donc vous ne pourrez pas démarrer"
+
+#: btrfs_sp_restore_gui.sh:259
+msgid "Suffix of the kernel filename."
+msgstr "Suffixe du nom de fichier du noyau."
+
+#: btrfs_sp_restore_gui.sh:298
+msgid ""
+"Then it is up to the calling script to handle the rebooting on behalf of the "
+"user."
+msgstr ""
+"Puis c'est au script appelant de gérer le rédmarrage selon le souhait de "
+"l'utilisateur."
+
+#: btrfs_sp_restore_gui.sh:709
+msgid "There were an error when producing the differences."
+msgstr "Il y a eu une erreur pendant la production des différences."
+
+#: btrfs_sp_restore_gui.sh:543
+msgid "This might take a few seconds and sometimes a few minutes."
+msgstr "Cela peut prendre quelques secondes et parfois quelques minutes."
+
+#: btrfs_sp_restore_gui.sh:227
+msgid "USAGE"
+msgstr "USAGE"
+
+#: btrfs_sp_restore_gui.sh:249
+msgid "When restoring that configuration's subvolume"
+msgstr "Lors de la restauration du sous-volume de cette configuration"
+
+#: btrfs_sp_restore_gui.sh:297
+msgid ""
+"When the user ask for reboot, it will not really reboot, but just exit with "
+"return code '3'."
+msgstr ""
+"Lorsque l'utilisateur demande le redémarrage, le redémarrage ne sera pas "
+"réellement effectué, le script se contentera de terminer avec le code retour "
+"'3'."
+
+#: btrfs_sp_restore_gui.sh:645 btrfs_sp_restore_gui.sh:707
+#: btrfs_sp_restore_gui.sh:738 btrfs_sp_restore_gui.sh:793
+msgid "Yes"
+msgstr "Oui"
+
+#: btrfs_sp_restore_gui.sh:445
+msgid "Yes, please"
+msgstr "Oui, SVP"
+
+#: btrfs_sp_restore_gui.sh:268
+msgid ""
+"You should define the following variables according to the %s documentation "
+"for '%s' :"
+msgstr ""
+"Vous devrez définir les variables suivantes selon la documentation de %s "
+"pour '%s' :"
+
+#: btrfs_sp_restore_gui.sh:796
+msgid "Your currently running system's kernel '%s'"
+msgstr "Votre noyau système actuellement en fonctionnement '%s'"
+
+#: btrfs_sp_restore_gui.sh:600
+msgid ""
+"and together they form a representation of the differences with the previous/"
+"below savepoint"
+msgstr ""
+"et ensemble cela forme une représentation des différences avec le précédent/"
+"dessous point de sauvegarde"
+
+#: btrfs_sp_restore_gui.sh:800
+msgid "before your system has rebooted."
+msgstr "avant que votre système n'ait rebooté."
+
+#: btrfs_sp_restore_gui.sh:741
+msgid "from the savepoint"
+msgstr "depuis le point de sauvegarde"
+
+#: btrfs_sp_restore_gui.sh:250
+msgid "it checks that the current kernel is still present in the restored one."
+msgstr ""
+"cela vérifie que le noyau courant est toujours présent parmis ceux restaurés."
+
+#: btrfs_sp_restore_gui.sh:263
+msgid "see '%s' documentation."
+msgstr "Voir la documentation de '%s'."
+
+#: btrfs_sp_restore_gui.sh:390
+msgid "system's restoration, thanks to BTRFS snapshots"
+msgstr "restauration du système, grâce aux snapshots BTRFS"
+
+#: btrfs_sp_restore_gui.sh:515
+msgid "then press <space> to select an item"
+msgstr "puis appuyez sur <espace> pour sélectionner un élément"
+
+#~ msgid "Info: use <tab> to move around selection (i.e.: change button)."
+#~ msgstr ""
+#~ "Info: utilisez <tab> pour déplacer la sélection (càd: changer de bouton)."

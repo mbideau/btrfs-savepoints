@@ -1,0 +1,903 @@
+#: /root/btrfs-sp/btrfs_sp.sh:2773
+msgid "(available: %.1f Gb, limit: %.1f Gb)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:263
+msgid "A datetime (Y-m-d H:M:S) that defines the restoration event date time."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:215
+msgid "A datetime (Y-m-d H:M:S) that defines the savepoint taking date time."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:246 /root/btrfs-sp/btrfs_sp.sh:273 /root/btrfs-sp/btrfs_sp.sh:309
+msgid "A datetime (Y-m-d H:M:S) that indicate when is \"now\"."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:221
+msgid "A moment name in the system execution. It can be :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:242 /root/btrfs-sp/btrfs_sp.sh:269 /root/btrfs-sp/btrfs_sp.sh:305
+msgid "A suffix to add to the savepoint filename."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:66
+msgid "ARGUMENTS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:515
+msgid "AUTHORS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:147
+msgid "Add/write something to the persistent log."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:340
+msgid "Allowed values are the following"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:87 /root/btrfs-sp/btrfs_sp.sh:98 /root/btrfs-sp/btrfs_sp.sh:106
+#: /root/btrfs-sp/btrfs_sp.sh:151 /root/btrfs-sp/btrfs_sp.sh:158
+msgid "Arguments"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:206
+msgid "By commands"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:279
+msgid ""
+"By default, the savepoint may not be really removed, but instead just be renamed/moved up if a "
+"newer symlink where pointing at it, it will just replace that symlink."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:61
+msgid "CMD_ARGS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:61 /root/btrfs-sp/btrfs_sp.sh:68
+msgid "COMMAND"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:74 /root/btrfs-sp/btrfs_sp.sh:88 /root/btrfs-sp/btrfs_sp.sh:99
+#: /root/btrfs-sp/btrfs_sp.sh:107 /root/btrfs-sp/btrfs_sp.sh:121 /root/btrfs-sp/btrfs_sp.sh:127
+#: /root/btrfs-sp/btrfs_sp.sh:133 /root/btrfs-sp/btrfs_sp.sh:139 /root/btrfs-sp/btrfs_sp.sh:152
+#: /root/btrfs-sp/btrfs_sp.sh:159 /root/btrfs-sp/btrfs_sp.sh:170
+msgid "CONFIG"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:316
+msgid "CONFIGURATION"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:525
+msgid "COPYRIGHT"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1215 /root/btrfs-sp/btrfs_sp.sh:1249
+msgid "Cannot produce a diff without '%s' binary (%s)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3464
+msgid "Configuration variables '%s' must be defined."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:105
+msgid "Create a new savepoint configuration."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:75 /root/btrfs-sp/btrfs_sp.sh:80 /root/btrfs-sp/btrfs_sp.sh:91
+#: /root/btrfs-sp/btrfs_sp.sh:94 /root/btrfs-sp/btrfs_sp.sh:128 /root/btrfs-sp/btrfs_sp.sh:134
+#: /root/btrfs-sp/btrfs_sp.sh:140
+msgid "DATETIME"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1039
+msgid "DAY"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:365
+msgid "Default savepoint variables in the global configuration"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:172
+msgid "Default to"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:488
+msgid "Directory where to find the configurations for each managed folder."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:327
+msgid "Directory where to find the configurations."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:163 /root/btrfs-sp/btrfs_sp.sh:182
+msgid "Display help message."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:185
+msgid "Display version and license informations."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:285
+msgid "Do not copy all the savepoint configuration defaults to the new configuration file."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:462 /root/btrfs-sp/btrfs_sp.sh:468
+msgid "Do not trigger the '%s' algorith after a savepoint creation."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:250
+msgid "Do not trigger the purging of savepoint based on differences."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:254
+msgid "Do not trigger the purging of savepoint based on numbers."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:194 /root/btrfs-sp/btrfs_sp.sh:203
+msgid "Do not use it manually from command line (except for testing puppose)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:502
+msgid "ENVIRONMENT"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:496
+msgid "EXAMPLES"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:323 /root/btrfs-sp/btrfs_sp.sh:329 /root/btrfs-sp/btrfs_sp.sh:334
+#: /root/btrfs-sp/btrfs_sp.sh:346 /root/btrfs-sp/btrfs_sp.sh:353 /root/btrfs-sp/btrfs_sp.sh:360
+#: /root/btrfs-sp/btrfs_sp.sh:376 /root/btrfs-sp/btrfs_sp.sh:383 /root/btrfs-sp/btrfs_sp.sh:396
+#: /root/btrfs-sp/btrfs_sp.sh:408 /root/btrfs-sp/btrfs_sp.sh:418 /root/btrfs-sp/btrfs_sp.sh:435
+#: /root/btrfs-sp/btrfs_sp.sh:441 /root/btrfs-sp/btrfs_sp.sh:456 /root/btrfs-sp/btrfs_sp.sh:458
+#: /root/btrfs-sp/btrfs_sp.sh:464 /root/btrfs-sp/btrfs_sp.sh:470 /root/btrfs-sp/btrfs_sp.sh:475
+msgid "Example"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:389 /root/btrfs-sp/btrfs_sp.sh:423
+msgid "Example (recommended)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:454
+msgid "Except for the %s hooks that will only have the 2nd one."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:368
+msgid "Except for the '%s' and '%s' variables, for which it would makes no sense."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:479
+msgid "FILES"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1274
+msgid "Failed to create snapshot (ro) from '%s' to '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2967
+msgid "Fatal error"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:321
+msgid "File for local overrides of global configuration."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:391
+msgid "Final savepoints directory for configuration '%s', will be :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:168
+msgid "For all commands"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:72
+msgid "For each configuration, may create a new snapshot and do pruning."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:376 /root/btrfs-sp/btrfs_sp.sh:383
+msgid "For the root filesystem '%s' mounted at '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:290 /root/btrfs-sp/btrfs_sp.sh:298
+msgid "Format the output for the restoration GUI."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:157
+msgid "Get differences between current subvolume and a savepoint (of the same configuration)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:150
+msgid "Get differences between two savepoints (of the same configuration)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:498
+msgid "Get the differences between two snapshots."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:318
+msgid "Global variables"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1038
+msgid "HOUR"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:239
+msgid "Hence that important feature/option."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:532
+msgid "Home page"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:433
+msgid "How much backup to keep."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:333
+msgid "How much free space to preserve (in Gb)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:360
+msgid "If the persistent log is on a subvolume '%s' mounted at '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:396
+msgid "If the savepoints dir is on a subvolume '%s' mounted at '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:236
+msgid "If the system was not properly stopped or is running with rootfs mounted,"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:280
+msgid ""
+"In order to really delete it and all the symlinks pointing at it (recursively), that option must "
+"be specified."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:230
+msgid "Indicate that the savepoint should be considered/flagged as a safe one."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:511
+msgid "Influence the translation."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:69
+msgid "Is one of the following:"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:322 /root/btrfs-sp/btrfs_sp.sh:328 /root/btrfs-sp/btrfs_sp.sh:351
+msgid "It is recommended to put it where the backups are, at the root of the backups dir."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:381
+msgid "It is the same as the '%s' options parameter, when mounting the subvolume."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:251 /root/btrfs-sp/btrfs_sp.sh:255
+msgid "It normaly happens after a savepoint have been created."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:366
+msgid "Just use the same as the savepoint variables (below), but prefix them by: '%s' (i.e.: %s)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:544
+msgid "License %s: %s <%s>"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:119
+msgid "List all the savepoints."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:114
+msgid "List the configurations."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1037
+msgid "MINUTE"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:77
+msgid "MOMENT"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1041
+msgid "MONTH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:108 /root/btrfs-sp/btrfs_sp.sh:984
+msgid "MOUNTED_PATH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:247 /root/btrfs-sp/btrfs_sp.sh:274 /root/btrfs-sp/btrfs_sp.sh:310
+msgid "Mainly used for purging backup based on number refering to a unit of time."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:202
+msgid "Meant to be used only when executed by a %s unit."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:193
+msgid "Meant to be used only when executed by an %s script."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:491
+msgid "NOTES"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:211 /root/btrfs-sp/btrfs_sp.sh:295
+msgid "Name of the configuration"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:440
+msgid "Not yet used."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:61 /root/btrfs-sp/btrfs_sp.sh:166
+msgid "OPTIONS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:212 /root/btrfs-sp/btrfs_sp.sh:243 /root/btrfs-sp/btrfs_sp.sh:270
+#: /root/btrfs-sp/btrfs_sp.sh:306
+msgid "Only alphanum characters are allowed, plus the following: '%s'."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:235
+msgid "Only reboot/shutdown are recommended because it ensures the system has properly stopped."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:231
+msgid ""
+"Only savepoint that are made when the system is not running and was properly stoped, should be "
+"considered safe. Which are the following cases :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:73 /root/btrfs-sp/btrfs_sp.sh:90 /root/btrfs-sp/btrfs_sp.sh:101
+#: /root/btrfs-sp/btrfs_sp.sh:110 /root/btrfs-sp/btrfs_sp.sh:115 /root/btrfs-sp/btrfs_sp.sh:120
+#: /root/btrfs-sp/btrfs_sp.sh:126 /root/btrfs-sp/btrfs_sp.sh:132 /root/btrfs-sp/btrfs_sp.sh:138
+msgid "Options"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:395
+msgid "Path of the savepoints dir relative to the BTRFS top level subvolume %s."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:380
+msgid "Path of the subvolume relative to the BTRFS top level subvolume %s."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:350
+msgid "Path to a 'persistent' text file (that will not be affected by rollbacks)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:171
+msgid "Path to a global configuration file."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:359
+msgid "Paths relatives to the BTRFS top level subvolume %s."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:175
+msgid "Prefix paths with the specified PATH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:505
+msgid "Print debuging information to '%s' only if %s='%s'."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:144
+msgid "Print/read the persistent log."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:520
+msgid "REPORTING BUGS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:97
+msgid "Remove savepoints."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:522
+msgid "Report bugs to"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:86
+msgid "Restore/replace the current BTRFS subvolume from the specified savepoint."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1062
+msgid "Retention"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:125
+msgid "Run the pruning algorithm (same as '%s' then '%s')."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:131
+msgid "Run the purge-diff algorithm, that replace savepoints that have no differences by a symlink."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:137
+msgid ""
+"Run the purge-number algorithm that delete savepoints based on a retention strategy that keep X "
+"savepoints for each kind of time unit (sessions, minutes, hours, days, weeks, months, years)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:89 /root/btrfs-sp/btrfs_sp.sh:153 /root/btrfs-sp/btrfs_sp.sh:154
+#: /root/btrfs-sp/btrfs_sp.sh:160
+msgid "SAVEPOINT"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:100
+msgid "SAVEPOINTS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:530
+msgid "SEE ALSO"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1036
+msgid "SESSION"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:434
+msgid "SESSION: between BOOT/RESUME and one of REBOOT/SHUTDOWN/HALT/SUSPEND"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:109 /root/btrfs-sp/btrfs_sp.sh:987
+msgid "SUBVOL_PATH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:79 /root/btrfs-sp/btrfs_sp.sh:93
+msgid "SUFFIX"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:372
+msgid "Savepoint configuration variables"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:512
+msgid "See %s documentation."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:218 /root/btrfs-sp/btrfs_sp.sh:266
+msgid "Skip checking free space"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2980
+msgid "Success"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:375
+msgid "The (mounted) subvolume path to manage (backup/restore)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:492
+msgid "The backup directory must be reachable inside the top level BTRFS filesystem mount."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3376
+msgid "The command '%s' requires a configuration"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:485
+msgid "The default configuration path for local overrides."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:482
+msgid "The default global configuration path (if not overriden with option %s)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:455
+msgid "The hook command will be executed by '%s'."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:451
+msgid "The hook command will be suffixed with 2 arguments"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:352
+msgid "The path is relative to the BTRFS top level subvolume."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:546
+msgid "There is NO WARRANTY, to the extent permitted by law."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1234
+msgid "There was an error when producing the diff between savepoints '%s' and '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1287
+msgid "There was an error when producing the diff between snapshot '%s' and savepoint '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:493
+msgid ""
+"This implies that it must be in the same BTRFS filesystem than the backuped subvolumes (and also "
+"because of '%s')."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:545
+msgid "This is free software: you are free to change and redistribute it."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:178
+msgid "This is mainly used in initramfs or systemd unit when root filesystem is not mounted"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:388
+msgid "This path should belong to a mounted BTRFS subvolume."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:59
+msgid "USAGE"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:258 /root/btrfs-sp/btrfs_sp.sh:313 /root/btrfs-sp/btrfs_sp.sh:474
+msgid "Use the 'no-session' algorithm when pruning savepoints."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:407 /root/btrfs-sp/btrfs_sp.sh:463 /root/btrfs-sp/btrfs_sp.sh:469
+msgid "Values allowed are:"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1040
+msgid "WEEK"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2974
+msgid "Warning"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:338
+msgid "What action to do when there is not enough free space according to the variable %s."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:439
+msgid "What patterns to ignores when comparing savepoints."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:450
+msgid "What to execute before/after backuping and/or restoring."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:422
+msgid "When it is considered a safe backup."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:406
+msgid "When it should be automatically backuped."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:188
+msgid "When specified, will understand that it is executed in the initramfs"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:341
+msgid "Where the '%s' is the path of a shell script (called with '%s' binary)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:387
+msgid "Where to backup the savepoint."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:417
+msgid "With what suffix."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:517
+msgid "Written by"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1042
+msgid "YEAR"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3404
+msgid "You might want to create one with command '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:342
+msgid "and have the following argument (in that order) :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:57
+msgid "backup/restore a folder (BTRFS subvolume) at predefined moments with archiving and pruning."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3024
+msgid "binary '%s' not found"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:234
+msgid "boot (before mounting rootfs) if properly stopped before"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:179
+msgid "but instead the whole BTRFS tree is mounted at PATH (with the subvolume '%s')."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:981
+msgid "configuration file '%s' already exists"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3259
+msgid "configuration file '%s' doesn't exist or isn't readable"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3418
+msgid "configuration not found ('%s' doesn't exist)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3295
+msgid "configurations directory is not defined (use variable '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:344
+msgid "current free space available (in %s)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:340
+msgid "default"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:863 /root/btrfs-sp/btrfs_sp.sh:901
+msgid "failed to create snapshot (ro) from '%s' to '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:882
+msgid "failed to create snapshot (rw) from '%s' to '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1649
+msgid "failed to delete new snapshot '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2649
+msgid "failed to delete savepoint '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:872
+msgid "failed to delete subvolume '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2479
+msgid "failed to get a date from filename '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2747 /root/btrfs-sp/btrfs_sp.sh:2764
+msgid "failed to get avalable free space for '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2724
+msgid "failed to get mount point for '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1982
+msgid "failed to get the date from the savepoint '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1602 /root/btrfs-sp/btrfs_sp.sh:1702 /root/btrfs-sp/btrfs_sp.sh:1915
+msgid "failed to get the list of backups for directory '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1999
+msgid "failed to get the week days for datetime '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2844
+msgid "failed to get week day of datetime '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:755
+msgid "failed to snapshot '%s' to '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:238
+msgid "if restored, will restore an unstable/incoherent system."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:177
+msgid "instead of paths relative to mounted root filesystem"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2885
+msgid "invalid boolean value '%s' (variable: '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3329
+msgid "invalid command '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:977 /root/btrfs-sp/btrfs_sp.sh:3433
+msgid "invalid configuration's name '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:697 /root/btrfs-sp/btrfs_sp.sh:815
+msgid "invalid date option '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2876
+msgid "invalid decimal number value '%s' (variable: '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3119
+msgid "invalid option"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2867
+msgid "invalid positive number value '%s' (variable: '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3209 /root/btrfs-sp/btrfs_sp.sh:3214 /root/btrfs-sp/btrfs_sp.sh:3217
+#: /root/btrfs-sp/btrfs_sp.sh:3220
+msgid "invalid value '%s' for option %s"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3083
+msgid "invalid value for global variable '%s' (%s)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:237
+msgid ""
+"it can cause savepoint to be made meanwhile the state of an application is not coherent, and then,"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:345
+msgid "limit of free space required (in %s)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:189 /root/btrfs-sp/btrfs_sp.sh:198
+msgid "meaning :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:154
+msgid "name of the compared savepoint"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:88 /root/btrfs-sp/btrfs_sp.sh:99 /root/btrfs-sp/btrfs_sp.sh:107
+#: /root/btrfs-sp/btrfs_sp.sh:152 /root/btrfs-sp/btrfs_sp.sh:159
+msgid "name of the configuration"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:153
+msgid "name of the referenece savepoint"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:160
+msgid "name of the savepoint to compare to"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:89
+msgid "name of the savepoint to restore from"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:100
+msgid "names of the savepoints to delete"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3403
+msgid "no configuration yet."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3308
+msgid "no configurations directory at '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2772
+msgid "not enough free space for path '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:233
+msgid "offline using a LIVE system if properly stopped before"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3182
+msgid "options '%s' and '%s' can not be specified simultaneously"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:109
+msgid "path of the BTRFS subvolume to manage, relative to the top level BTRFS subvolume (id:5)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:108
+msgid "path of the BTRFS subvolume to manage, when mounted"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:343
+msgid "path of the file or directory considered"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3345
+msgid "persistent log is not defined (use variable '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2784
+msgid "pruning savepoints have failed"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:1562 /root/btrfs-sp/btrfs_sp.sh:1570 /root/btrfs-sp/btrfs_sp.sh:1573
+msgid "pruning savepoints using '%s' algorithm has failed"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:232
+msgid "reboot/shutdown"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:192 /root/btrfs-sp/btrfs_sp.sh:201
+msgid "replacing error and message functions with the one from the helper script"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:943
+msgid "savepoint '%s' doesn't exist"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3479 /root/btrfs-sp/btrfs_sp.sh:3483
+msgid "savepoints dir is not defined (use variable '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2794
+msgid "shell script '%s' doesn't exist"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:2803
+msgid "shell script '%s' has failed (arguments: %s)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:452
+msgid "the BTRFS subvolume considered for the operation"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:689
+msgid "the folder at '%s' is not a subvolume"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:722 /root/btrfs-sp/btrfs_sp.sh:837 /root/btrfs-sp/btrfs_sp.sh:893
+msgid "the savepoint '%s' already exists ! (bug ?)"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:793
+msgid "the savepoint '%s' doesn't exist"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:804
+msgid "the savepoint '%s' is a link to '%s', that doesn't belong to savepoints dir '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:453
+msgid "the savepoint considered for the operation"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:3036
+msgid "the version '%s' is required for the binary '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:176
+msgid "then add the relatives prefixes from BTRFS top level subvolume"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:190 /root/btrfs-sp/btrfs_sp.sh:199
+msgid "trying to source the helper function script at :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:456
+msgid "using a custom shell script"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:458
+msgid "using a shell command ignoring the 2 arguments"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp.sh:984 /root/btrfs-sp/btrfs_sp.sh:987
+msgid "variable '%s' is not defined"
+msgstr ""

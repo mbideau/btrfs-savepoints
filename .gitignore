@@ -1,0 +1,3 @@
+locale/*/LC_MESSAGES/*.po~
+locale/*/LC_MESSAGES/*.mo
+.tmp

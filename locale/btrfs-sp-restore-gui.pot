@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: btrfs-sp 0.1.0\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2021-01-09 17:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: btrfs_sp_restore_gui.sh:669
+msgid "                            No difference found"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:575
+msgid "                            No savepoints found"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:489
+msgid "                          No configuration found"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:599
+msgid "        3 groups of 3 signs ('.', '-', '+', '*'), or a single letter 'v'"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:605
+msgid ""
+"        in any of the 3 groups of 3 signs, a dot '.' means nothing, it is "
+"just a visual mark to show that an analysis have been done"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:602
+msgid ""
+"        the first/left group of 3 signs, represent the deletions, the more "
+"'-' sign there is the more files were deleted"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:603
+msgid ""
+"        the second/middle group of 3 signs, represent the additions, the more "
+"'+' sign there is the more files were added"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:601
+msgid ""
+"        the single letter 'v' means the savepoint is just a link to the "
+"previous/below savepoint"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:604
+msgid ""
+"        the third/right group of 3 signs, represent the modifications, the "
+"more '*' sign there is the more files were modified"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:447
+msgid "       Do you want to restore your system from a previous state ?"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:516
+msgid "      use <tab> to move around selection (i.e.: change button)."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:797
+msgid " was not found after the restoration, at :"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:225
+msgid "%s GUI to restore a folder (BTRFS subvolume) at previous state."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:288
+msgid "COLUMNS"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:510 btrfs_sp_restore_gui.sh:596
+#: btrfs_sp_restore_gui.sh:646 btrfs_sp_restore_gui.sh:708
+#: btrfs_sp_restore_gui.sh:739 btrfs_sp_restore_gui.sh:794
+msgid "Cancel"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:542
+msgid ""
+"Collecting savepoints for that configuration, and analyzing their "
+"differences..."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:710
+msgid "Continue anyway ?"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:238 btrfs_sp_restore_gui.sh:252
+#: btrfs_sp_restore_gui.sh:256 btrfs_sp_restore_gui.sh:260
+msgid "Default to"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:245
+msgid "Default to '%s' binary, then '%s'."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:292
+msgid "Display help message."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:279
+msgid "Example"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:265
+msgid "FILE"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:358 btrfs_sp_restore_gui.sh:374
+msgid "Fatal error: binary '%s' not found"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:313
+msgid "Fatal error: invalid option"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:368
+msgid "Fatal error: no binary found for handling dialog box (no '%s' nor '%s')"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:289
+msgid "Force to treat the console as the specified size."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:251
+msgid ""
+"If the kernel is not found in the subvolume, it offers to reboot at the exit."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:267
+msgid "In order to create such a theme file"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:514
+msgid "Info: use 'arrow keys' to move up/down the list"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:598
+msgid "Legend: before each savepoint there are one of the following :"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:266
+msgid "Load the specified theme file."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:391
+msgid "Made with time, love and passion by Michael Bideau"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:845
+msgid "More details on the error below."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:295
+msgid "NOTES"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:446
+msgid "No, thank you"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:229 btrfs_sp_restore_gui.sh:234
+msgid "OPTIONS"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:509 btrfs_sp_restore_gui.sh:595
+msgid "Ok"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:843
+msgid "Ok, I understand"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:762
+msgid "Ok, great"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:488 btrfs_sp_restore_gui.sh:574
+#: btrfs_sp_restore_gui.sh:668 btrfs_sp_restore_gui.sh:686
+msgid "Ok, then"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:236 btrfs_sp_restore_gui.sh:240
+#: btrfs_sp_restore_gui.sh:243
+msgid "PATH"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:237
+msgid "Path to '%s' binary."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:241
+msgid "Path to '%s' global configuration."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:244
+msgid "Path to a '%s' binary."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:742
+msgid "Please confirm"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:255
+msgid "Prefix of the kernel filename."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:263
+msgid "Prefix paths with the specified PATH"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:288
+msgid "ROWS"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:801
+msgid "Reboot after exiting this program ?"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:248
+msgid "Regular expression to match the name of the '%s' %s configuration."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:763
+msgid "Restoration complete"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:844
+msgid "Restoration has failed."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:740
+msgid "Restore the BTRFS subvolume"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:285
+msgid "See also"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:647
+msgid "See the differences with the current state ?"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:606
+msgid "Select the savepoint to restore from :"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:513
+msgid "Select which element you want to restore :"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:799
+msgid "So you will not be able to boot"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:259
+msgid "Suffix of the kernel filename."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:298
+msgid ""
+"Then it is up to the calling script to handle the rebooting on behalf of the "
+"user."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:709
+msgid "There were an error when producing the differences."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:543
+msgid "This might take a few seconds and sometimes a few minutes."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:227
+msgid "USAGE"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:249
+msgid "When restoring that configuration's subvolume"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:297
+msgid ""
+"When the user ask for reboot, it will not really reboot, but just exit with "
+"return code '3'."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:645 btrfs_sp_restore_gui.sh:707
+#: btrfs_sp_restore_gui.sh:738 btrfs_sp_restore_gui.sh:793
+msgid "Yes"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:445
+msgid "Yes, please"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:268
+msgid ""
+"You should define the following variables according to the %s documentation "
+"for '%s' :"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:796
+msgid "Your currently running system's kernel '%s'"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:600
+msgid ""
+"and together they form a representation of the differences with the previous/"
+"below savepoint"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:800
+msgid "before your system has rebooted."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:741
+msgid "from the savepoint"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:250
+msgid "it checks that the current kernel is still present in the restored one."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:263
+msgid "see '%s' documentation."
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:390
+msgid "system's restoration, thanks to BTRFS snapshots"
+msgstr ""
+
+#: btrfs_sp_restore_gui.sh:515
+msgid "then press <space> to select an item"
+msgstr ""

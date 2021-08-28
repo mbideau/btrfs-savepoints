@@ -1,0 +1,30 @@
+# French translations for btrfs-sp package
+# Traductions françaises du paquet btrfs-sp.
+# This file is put in the public domain.
+# Automatically generated, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.1\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2020-12-25 05:03+0100\n"
+"PO-Revision-Date: 2020-12-22 23:01+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: btrfs_sp_systemd_script.sh:360
+msgid "               BTRFS SavePoint creation failed"
+msgstr "              Échec de la création d'un point de sauvegarde BTRFS"
+
+#: btrfs_sp_systemd_script.sh:364
+msgid "               See log at : %s"
+msgstr "              Voir les logs: %s"
+
+#: btrfs_sp_systemd_script.sh:350
+msgid "BTRFS SavePoint created"
+msgstr "Point de sauvegarde BTRFS créé"

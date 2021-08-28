@@ -1,0 +1,269 @@
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:630
+msgid "                            No difference found"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:546
+msgid "                            No savepoints found"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:477
+msgid "                          No configuration found"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:438
+msgid "       Do you want to restore your system from a previous state ?"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:504
+msgid "      use <tab> to move around selection (i.e.: change button)."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:757
+msgid " was not found after the restoration, at :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:216
+msgid "%s GUI to restore a folder (BTRFS subvolume) at previous state."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:279
+msgid "COLUMNS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:498 /root/btrfs-sp/btrfs_sp_restore_gui.sh:567
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:608 /root/btrfs-sp/btrfs_sp_restore_gui.sh:669
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:700 /root/btrfs-sp/btrfs_sp_restore_gui.sh:754
+msgid "Cancel"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:671
+msgid "Continue anyway ?"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:229 /root/btrfs-sp/btrfs_sp_restore_gui.sh:243
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:247 /root/btrfs-sp/btrfs_sp_restore_gui.sh:251
+msgid "Default to"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:236
+msgid "Default to '%s' binary, then '%s'."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:283
+msgid "Display help message."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:270
+msgid "Example"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:256
+msgid "FILE"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:349 /root/btrfs-sp/btrfs_sp_restore_gui.sh:365
+msgid "Fatal error: binary '%s' not found"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:304
+msgid "Fatal error: invalid option"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:359
+msgid "Fatal error: no binary found for handling dialog box (no '%s' nor '%s')"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:280
+msgid "Force to treat the console as the specified size."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:242
+msgid "If the kernel is not found in the subvolume, it offers to reboot at the exit."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:258
+msgid "In order to create such a theme file"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:502
+msgid "Info: use 'arrow keys' to move up/down the list"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:257
+msgid "Load the specified theme file."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:382
+msgid "Made with time, love and passion by Michael Bideau"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:805
+msgid "More details on the error below."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:286
+msgid "NOTES"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:437
+msgid "No, thank you"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:220 /root/btrfs-sp/btrfs_sp_restore_gui.sh:225
+msgid "OPTIONS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:497 /root/btrfs-sp/btrfs_sp_restore_gui.sh:566
+msgid "Ok"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:803
+msgid "Ok, I understand"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:722
+msgid "Ok, great"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:476 /root/btrfs-sp/btrfs_sp_restore_gui.sh:545
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:629 /root/btrfs-sp/btrfs_sp_restore_gui.sh:647
+msgid "Ok, then"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:227 /root/btrfs-sp/btrfs_sp_restore_gui.sh:231
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:234
+msgid "PATH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:228
+msgid "Path to '%s' binary."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:232
+msgid "Path to '%s' global configuration."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:235
+msgid "Path to a '%s' binary."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:703
+msgid "Please confirm"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:246
+msgid "Prefix of the kernel filename."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:254
+msgid "Prefix paths with the specified PATH"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:279
+msgid "ROWS"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:761
+msgid "Reboot after exiting this program ?"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:239
+msgid "Regular expression to match the name of the '%s' %s configuration."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:723
+msgid "Restoration complete"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:804
+msgid "Restoration has failed."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:701
+msgid "Restore the BTRFS subvolume"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:276
+msgid "See also"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:609
+msgid "See the differences with the current state ?"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:569
+msgid "Select the savepoint to restore from :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:501
+msgid "Select which element you want to restore :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:759
+msgid "So you will not be able to boot"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:250
+msgid "Suffix of the kernel filename."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:289
+msgid "Then it is up to the calling script to handle the rebooting on behalf of the user."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:670
+msgid "There were an error when producing the differences."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:218
+msgid "USAGE"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:240
+msgid "When restoring that configuration's subvolume"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:288
+msgid "When the user ask for reboot, it will not really reboot, but just exit with return code '3'."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:607 /root/btrfs-sp/btrfs_sp_restore_gui.sh:668
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:699 /root/btrfs-sp/btrfs_sp_restore_gui.sh:753
+msgid "Yes"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:436
+msgid "Yes, please"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:259
+msgid "You should define the following variables according to the %s documentation for '%s' :"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:756
+msgid "Your currently running system's kernel '%s'"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:760
+msgid "before your system has rebooted."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:702
+msgid "from the savepoint"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:241
+msgid "it checks that the current kernel is still present in the restored one."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:254
+msgid "see '%s' documentation."
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:381
+msgid "system's restoration, thanks to BTRFS snapshots"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_restore_gui.sh:503
+msgid "then press <space> to select an item"
+msgstr ""

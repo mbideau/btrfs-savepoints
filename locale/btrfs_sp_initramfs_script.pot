@@ -1,0 +1,36 @@
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:560
+msgid "               BTRFS SavePoint created"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:567
+msgid "              reboot and hit '%s' at startup"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:566
+msgid "   To restore the system to a previous state"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:467 /root/btrfs-sp/btrfs_sp_initramfs_script.sh:500
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:521
+msgid "%d seconds left"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:498 /root/btrfs-sp/btrfs_sp_initramfs_script.sh:519
+msgid "Hit '%s' to enter BTRFS SavePoint restoration GUI"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:462
+msgid "Press '%s' key"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:378
+msgid "Rebooting now"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:465
+msgid "the BTRFS SavePoint restoration GUI"
+msgstr ""
+
+#: /root/btrfs-sp/btrfs_sp_initramfs_script.sh:463
+msgid "to enter"
+msgstr ""

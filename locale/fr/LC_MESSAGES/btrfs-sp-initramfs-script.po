@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.1\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2020-12-25 05:02+0100\n"
+"PO-Revision-Date: 2020-11-27\n"
+"Last-Translator: Michael Bideau <mica.devel@gmail.com> [France]\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: btrfs_sp_initramfs_script.sh:566
+msgid "               BTRFS SavePoint created"
+msgstr "              Point de sauvegarde BTRFS créé"
+
+#: btrfs_sp_initramfs_script.sh:584
+msgid "               BTRFS SavePoint creation failed"
+msgstr "              Échec de la création d'un point de sauvegarde BTRFS"
+
+#: btrfs_sp_initramfs_script.sh:588
+msgid "               See log at : %s"
+msgstr "              Voir les logs: %s"
+
+#: btrfs_sp_initramfs_script.sh:574
+msgid "              reboot and hit '%s' at startup"
+msgstr "       redémarrez et appuyez sur '%s' au démarrage"
+
+#: btrfs_sp_initramfs_script.sh:573
+msgid "   To restore the system to a previous state"
+msgstr "     Pour restaurer le système à un état précédent"
+
+#: btrfs_sp_initramfs_script.sh:474 btrfs_sp_initramfs_script.sh:507
+#: btrfs_sp_initramfs_script.sh:528
+msgid "%d seconds left"
+msgstr "%d secondes restantes"
+
+#: btrfs_sp_initramfs_script.sh:505 btrfs_sp_initramfs_script.sh:526
+msgid "Hit '%s' to enter BTRFS SavePoint restoration GUI"
+msgstr ""
+"Appuyez sur '%s' pour lancer l'interface de restauration des points de "
+"sauvegarde BTRFS"
+
+#: btrfs_sp_initramfs_script.sh:469
+msgid "Press '%s' key"
+msgstr "Appuyez sur '%s'"
+
+#: btrfs_sp_initramfs_script.sh:385
+msgid "Rebooting now"
+msgstr "Va redemarrer"
+
+#: btrfs_sp_initramfs_script.sh:472
+msgid "the BTRFS SavePoint restoration GUI"
+msgstr "l'interface de restauration des points de sauvegarde BTRFS"
+
+#: btrfs_sp_initramfs_script.sh:470
+msgid "to enter"
+msgstr "pour lancer"

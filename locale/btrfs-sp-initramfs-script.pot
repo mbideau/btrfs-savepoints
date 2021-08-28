@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: btrfs-sp 0.1.0\n"
+"Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
+"POT-Creation-Date: 2020-12-25 05:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: btrfs_sp_initramfs_script.sh:566
+msgid "               BTRFS SavePoint created"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:584
+msgid "               BTRFS SavePoint creation failed"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:588
+msgid "               See log at : %s"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:574
+msgid "              reboot and hit '%s' at startup"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:573
+msgid "   To restore the system to a previous state"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:474 btrfs_sp_initramfs_script.sh:507
+#: btrfs_sp_initramfs_script.sh:528
+msgid "%d seconds left"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:505 btrfs_sp_initramfs_script.sh:526
+msgid "Hit '%s' to enter BTRFS SavePoint restoration GUI"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:469
+msgid "Press '%s' key"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:385
+msgid "Rebooting now"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:472
+msgid "the BTRFS SavePoint restoration GUI"
+msgstr ""
+
+#: btrfs_sp_initramfs_script.sh:470
+msgid "to enter"
+msgstr ""

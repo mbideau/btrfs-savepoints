@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: btrfs-sp 0.1.0\n"
 "Report-Msgid-Bugs-To: mica.devel@gmail.com\n"
-"POT-Creation-Date: 2020-12-29 13:00+0100\n"
+"POT-Creation-Date: 2021-08-28 20:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: btrfs_sp.sh:2876
+#: btrfs_sp.sh:2877
 msgid "(available: %.1f Gb, limit: %.1f Gb)"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgstr ""
 msgid "A suffix to add to the savepoint filename."
 msgstr ""
 
-#: btrfs_sp.sh:334 btrfs_sp.sh:551
+#: btrfs_sp.sh:334 btrfs_sp.sh:552
 msgid "AUTHORS"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Alias"
 msgstr ""
 
-#: btrfs_sp.sh:401
+#: btrfs_sp.sh:402
 msgid "Allowed values are the following"
 msgstr ""
 
@@ -86,23 +86,23 @@ msgstr ""
 msgid "CONFIG"
 msgstr ""
 
-#: btrfs_sp.sh:293 btrfs_sp.sh:377
+#: btrfs_sp.sh:293 btrfs_sp.sh:378
 msgid "CONFIGURATION"
 msgstr ""
 
-#: btrfs_sp.sh:344 btrfs_sp.sh:561
+#: btrfs_sp.sh:344 btrfs_sp.sh:562
 msgid "COPYRIGHT"
 msgstr ""
 
-#: btrfs_sp.sh:1272 btrfs_sp.sh:1308 btrfs_sp.sh:1565
+#: btrfs_sp.sh:1273 btrfs_sp.sh:1309 btrfs_sp.sh:1566
 msgid "Cannot produce a diff without '%s' binary (%s)"
 msgstr ""
 
-#: btrfs_sp.sh:1063
+#: btrfs_sp.sh:1064
 msgid "Configuration '%s' created to '%s'%s"
 msgstr ""
 
-#: btrfs_sp.sh:3578
+#: btrfs_sp.sh:3579
 msgid "Configuration variables '%s' must be defined."
 msgstr ""
 
@@ -110,11 +110,11 @@ msgstr ""
 msgid "Create a new savepoint configuration."
 msgstr ""
 
-#: btrfs_sp.sh:1086
+#: btrfs_sp.sh:1087
 msgid "DAY"
 msgstr ""
 
-#: btrfs_sp.sh:425
+#: btrfs_sp.sh:426
 msgid "Default savepoint variables in the global configuration"
 msgstr ""
 
@@ -122,11 +122,11 @@ msgstr ""
 msgid "Default to"
 msgstr ""
 
-#: btrfs_sp.sh:307 btrfs_sp.sh:548
+#: btrfs_sp.sh:307 btrfs_sp.sh:549
 msgid "Directory where to find the configurations for each managed folder."
 msgstr ""
 
-#: btrfs_sp.sh:388
+#: btrfs_sp.sh:389
 msgid "Directory where to find the configurations."
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Do not ignore the patterns configured with the variable '%s'."
 msgstr ""
 
-#: btrfs_sp.sh:522 btrfs_sp.sh:528
+#: btrfs_sp.sh:523 btrfs_sp.sh:529
 msgid "Do not trigger the '%s' algorith after a savepoint creation."
 msgstr ""
 
@@ -176,44 +176,44 @@ msgstr ""
 msgid "EXAMPLES"
 msgstr ""
 
-#: btrfs_sp.sh:384 btrfs_sp.sh:390 btrfs_sp.sh:395 btrfs_sp.sh:406
-#: btrfs_sp.sh:413 btrfs_sp.sh:420 btrfs_sp.sh:436 btrfs_sp.sh:443
-#: btrfs_sp.sh:456 btrfs_sp.sh:468 btrfs_sp.sh:478 btrfs_sp.sh:495
-#: btrfs_sp.sh:501 btrfs_sp.sh:516 btrfs_sp.sh:518 btrfs_sp.sh:524
-#: btrfs_sp.sh:530 btrfs_sp.sh:535
+#: btrfs_sp.sh:385 btrfs_sp.sh:391 btrfs_sp.sh:396 btrfs_sp.sh:407
+#: btrfs_sp.sh:414 btrfs_sp.sh:421 btrfs_sp.sh:437 btrfs_sp.sh:444
+#: btrfs_sp.sh:457 btrfs_sp.sh:469 btrfs_sp.sh:479 btrfs_sp.sh:496
+#: btrfs_sp.sh:502 btrfs_sp.sh:517 btrfs_sp.sh:519 btrfs_sp.sh:525
+#: btrfs_sp.sh:531 btrfs_sp.sh:536
 msgid "Example"
 msgstr ""
 
-#: btrfs_sp.sh:449 btrfs_sp.sh:483
+#: btrfs_sp.sh:450 btrfs_sp.sh:484
 msgid "Example (recommended)"
 msgstr ""
 
-#: btrfs_sp.sh:514
+#: btrfs_sp.sh:515
 msgid "Except for the %s hooks that will only have the 2nd one."
 msgstr ""
 
-#: btrfs_sp.sh:428
+#: btrfs_sp.sh:429
 msgid ""
 "Except for the '%s' and '%s' variables, for which it would makes no sense."
 msgstr ""
 
-#: btrfs_sp.sh:298 btrfs_sp.sh:539
+#: btrfs_sp.sh:298 btrfs_sp.sh:540
 msgid "FILES"
 msgstr ""
 
-#: btrfs_sp.sh:1333
+#: btrfs_sp.sh:1334
 msgid "Failed to create snapshot (ro) from '%s' to '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:3070
+#: btrfs_sp.sh:3071
 msgid "Fatal error"
 msgstr ""
 
-#: btrfs_sp.sh:382
+#: btrfs_sp.sh:383
 msgid "File for local overrides of global configuration."
 msgstr ""
 
-#: btrfs_sp.sh:451
+#: btrfs_sp.sh:452
 msgid "Final savepoints directory for configuration '%s', will be :"
 msgstr ""
 
@@ -225,7 +225,7 @@ msgstr ""
 msgid "For each configuration, may create a new snapshot and do pruning."
 msgstr ""
 
-#: btrfs_sp.sh:436 btrfs_sp.sh:443
+#: btrfs_sp.sh:437 btrfs_sp.sh:444
 msgid "For the root filesystem '%s' mounted at '%s'"
 msgstr ""
 
@@ -247,11 +247,11 @@ msgstr ""
 msgid "Get the differences between two snapshots."
 msgstr ""
 
-#: btrfs_sp.sh:379
+#: btrfs_sp.sh:380
 msgid "Global variables"
 msgstr ""
 
-#: btrfs_sp.sh:1085
+#: btrfs_sp.sh:1086
 msgid "HOUR"
 msgstr ""
 
@@ -259,23 +259,23 @@ msgstr ""
 msgid "Hence that important feature/option."
 msgstr ""
 
-#: btrfs_sp.sh:351 btrfs_sp.sh:568
+#: btrfs_sp.sh:351 btrfs_sp.sh:569
 msgid "Home page"
 msgstr ""
 
-#: btrfs_sp.sh:493
+#: btrfs_sp.sh:494
 msgid "How much backup to keep."
 msgstr ""
 
-#: btrfs_sp.sh:394
+#: btrfs_sp.sh:395
 msgid "How much free space to preserve (in Gb)."
 msgstr ""
 
-#: btrfs_sp.sh:420
+#: btrfs_sp.sh:421
 msgid "If the persistent log is on a subvolume '%s' mounted at '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:456
+#: btrfs_sp.sh:457
 msgid "If the savepoints dir is on a subvolume '%s' mounted at '%s'"
 msgstr ""
 
@@ -298,13 +298,13 @@ msgstr ""
 msgid "Influence the translation."
 msgstr ""
 
-#: btrfs_sp.sh:383 btrfs_sp.sh:389 btrfs_sp.sh:411
+#: btrfs_sp.sh:384 btrfs_sp.sh:390 btrfs_sp.sh:412
 msgid ""
 "It is recommended to put it where the backups are, at the root of the backups "
 "dir."
 msgstr ""
 
-#: btrfs_sp.sh:441
+#: btrfs_sp.sh:442
 msgid ""
 "It is the same as the '%s' options parameter, when mounting the subvolume."
 msgstr ""
@@ -313,13 +313,13 @@ msgstr ""
 msgid "It normaly happens after a savepoint have been created."
 msgstr ""
 
-#: btrfs_sp.sh:426
+#: btrfs_sp.sh:427
 msgid ""
 "Just use the same as the savepoint variables (below), but prefix them by: "
 "'%s' (i.e.: %s)."
 msgstr ""
 
-#: btrfs_sp.sh:363
+#: btrfs_sp.sh:364
 msgid "License %s: %s <%s>"
 msgstr ""
 
@@ -331,15 +331,15 @@ msgstr ""
 msgid "List the configurations."
 msgstr ""
 
-#: btrfs_sp.sh:1084
+#: btrfs_sp.sh:1085
 msgid "MINUTE"
 msgstr ""
 
-#: btrfs_sp.sh:1088
+#: btrfs_sp.sh:1089
 msgid "MONTH"
 msgstr ""
 
-#: btrfs_sp.sh:64 btrfs_sp.sh:1018
+#: btrfs_sp.sh:64 btrfs_sp.sh:1019
 msgid "MOUNTED_PATH"
 msgstr ""
 
@@ -364,7 +364,7 @@ msgstr ""
 msgid "Name of the configuration"
 msgstr ""
 
-#: btrfs_sp.sh:500
+#: btrfs_sp.sh:501
 msgid "Not yet used."
 msgstr ""
 
@@ -388,15 +388,15 @@ msgid ""
 "stoped, should be considered safe. Which are the following cases :"
 msgstr ""
 
-#: btrfs_sp.sh:455
+#: btrfs_sp.sh:456
 msgid "Path of the savepoints dir relative to the BTRFS top level subvolume %s."
 msgstr ""
 
-#: btrfs_sp.sh:440
+#: btrfs_sp.sh:441
 msgid "Path of the subvolume relative to the BTRFS top level subvolume %s."
 msgstr ""
 
-#: btrfs_sp.sh:410
+#: btrfs_sp.sh:411
 msgid ""
 "Path to a 'persistent' text file (that will not be affected by rollbacks)."
 msgstr ""
@@ -405,7 +405,7 @@ msgstr ""
 msgid "Path to a global configuration file."
 msgstr ""
 
-#: btrfs_sp.sh:419
+#: btrfs_sp.sh:420
 msgid "Paths relatives to the BTRFS top level subvolume %s."
 msgstr ""
 
@@ -421,7 +421,7 @@ msgstr ""
 msgid "Print/read the persistent log."
 msgstr ""
 
-#: btrfs_sp.sh:339 btrfs_sp.sh:556
+#: btrfs_sp.sh:339 btrfs_sp.sh:557
 msgid "REPORTING BUGS"
 msgstr ""
 
@@ -429,7 +429,7 @@ msgstr ""
 msgid "Remove savepoints."
 msgstr ""
 
-#: btrfs_sp.sh:341 btrfs_sp.sh:558
+#: btrfs_sp.sh:341 btrfs_sp.sh:559
 msgid "Report bugs to"
 msgstr ""
 
@@ -438,7 +438,7 @@ msgid ""
 "Restore/replace the current BTRFS subvolume with the specified savepoint."
 msgstr ""
 
-#: btrfs_sp.sh:1109
+#: btrfs_sp.sh:1110
 msgid "Retention"
 msgstr ""
 
@@ -467,15 +467,15 @@ msgstr ""
 msgid "SAVEPOINTS"
 msgstr ""
 
-#: btrfs_sp.sh:349 btrfs_sp.sh:566
+#: btrfs_sp.sh:349 btrfs_sp.sh:567
 msgid "SEE ALSO"
 msgstr ""
 
-#: btrfs_sp.sh:1083
+#: btrfs_sp.sh:1084
 msgid "SESSION"
 msgstr ""
 
-#: btrfs_sp.sh:494
+#: btrfs_sp.sh:495
 msgid "SESSION: between BOOT/RESUME and one of REBOOT/SHUTDOWN/HALT/SUSPEND"
 msgstr ""
 
@@ -487,11 +487,11 @@ msgstr ""
 msgid "SP_REF"
 msgstr ""
 
-#: btrfs_sp.sh:64 btrfs_sp.sh:1021
+#: btrfs_sp.sh:64 btrfs_sp.sh:1022
 msgid "SUBVOL_PATH"
 msgstr ""
 
-#: btrfs_sp.sh:432
+#: btrfs_sp.sh:433
 msgid "Savepoint configuration variables"
 msgstr ""
 
@@ -507,15 +507,15 @@ msgstr ""
 msgid "Skip checking free space"
 msgstr ""
 
-#: btrfs_sp.sh:3083
+#: btrfs_sp.sh:3084
 msgid "Success"
 msgstr ""
 
-#: btrfs_sp.sh:435
+#: btrfs_sp.sh:436
 msgid "The (mounted) subvolume path to manage (backup/restore)."
 msgstr ""
 
-#: btrfs_sp.sh:1570
+#: btrfs_sp.sh:1571
 msgid "The BTRFS subvolume '%s' doesn't exist"
 msgstr ""
 
@@ -525,35 +525,35 @@ msgid ""
 "mount."
 msgstr ""
 
-#: btrfs_sp.sh:3489
+#: btrfs_sp.sh:3490
 msgid "The command '%s' requires a configuration"
 msgstr ""
 
-#: btrfs_sp.sh:304 btrfs_sp.sh:545
+#: btrfs_sp.sh:304 btrfs_sp.sh:546
 msgid "The default configuration path for local overrides."
 msgstr ""
 
-#: btrfs_sp.sh:301 btrfs_sp.sh:542
+#: btrfs_sp.sh:301 btrfs_sp.sh:543
 msgid "The default global configuration path (if not overriden with option %s)."
 msgstr ""
 
-#: btrfs_sp.sh:515
+#: btrfs_sp.sh:516
 msgid "The hook command will be executed by '%s'."
 msgstr ""
 
-#: btrfs_sp.sh:511
+#: btrfs_sp.sh:512
 msgid "The hook command will be suffixed with 2 arguments"
 msgstr ""
 
-#: btrfs_sp.sh:412
+#: btrfs_sp.sh:413
 msgid "The path is relative to the BTRFS top level subvolume."
 msgstr ""
 
-#: btrfs_sp.sh:365
+#: btrfs_sp.sh:366
 msgid "There is NO WARRANTY, to the extent permitted by law."
 msgstr ""
 
-#: btrfs_sp.sh:1588
+#: btrfs_sp.sh:1589
 msgid ""
 "There was an error when producing the diff between BTRFS subvolumes '%s' and "
 "'%s'"
@@ -565,7 +565,7 @@ msgid ""
 "subvolumes (and also because of '%s')."
 msgstr ""
 
-#: btrfs_sp.sh:364
+#: btrfs_sp.sh:365
 msgid "This is free software: you are free to change and redistribute it."
 msgstr ""
 
@@ -575,7 +575,7 @@ msgid ""
 "mounted"
 msgstr ""
 
-#: btrfs_sp.sh:448
+#: btrfs_sp.sh:449
 msgid "This path should belong to a mounted BTRFS subvolume."
 msgstr ""
 
@@ -583,41 +583,41 @@ msgstr ""
 msgid "USAGE"
 msgstr ""
 
-#: btrfs_sp.sh:230 btrfs_sp.sh:285 btrfs_sp.sh:534
+#: btrfs_sp.sh:230 btrfs_sp.sh:285 btrfs_sp.sh:535
 msgid "Use the 'no-session' algorithm when pruning savepoints."
 msgstr ""
 
-#: btrfs_sp.sh:467 btrfs_sp.sh:523 btrfs_sp.sh:529
+#: btrfs_sp.sh:468 btrfs_sp.sh:524 btrfs_sp.sh:530
 msgid "Values allowed are:"
 msgstr ""
 
-#: btrfs_sp.sh:1087
+#: btrfs_sp.sh:1088
 msgid "WEEK"
 msgstr ""
 
-#: btrfs_sp.sh:3077
+#: btrfs_sp.sh:3078
 msgid "Warning"
 msgstr ""
 
-#: btrfs_sp.sh:399
+#: btrfs_sp.sh:400
 msgid ""
 "What action to do when there is not enough free space according to the "
 "variable %s."
 msgstr ""
 
-#: btrfs_sp.sh:499
+#: btrfs_sp.sh:500
 msgid "What patterns to ignores when comparing savepoints."
 msgstr ""
 
-#: btrfs_sp.sh:510
+#: btrfs_sp.sh:511
 msgid "What to execute before/after backuping and/or restoring."
 msgstr ""
 
-#: btrfs_sp.sh:482
+#: btrfs_sp.sh:483
 msgid "When it is considered a safe backup."
 msgstr ""
 
-#: btrfs_sp.sh:466
+#: btrfs_sp.sh:467
 msgid "When it should be automatically backuped."
 msgstr ""
 
@@ -630,49 +630,47 @@ msgid ""
 "When specified, will understand that it is executed in the systemd LSB context"
 msgstr ""
 
-#: btrfs_sp.sh:402
+#: btrfs_sp.sh:403
 msgid "Where the '%s' is the path of a shell script (called with '%s' binary)"
 msgstr ""
 
-#: btrfs_sp.sh:447
+#: btrfs_sp.sh:448
 msgid "Where to backup the savepoint."
 msgstr ""
 
-#: btrfs_sp.sh:477
+#: btrfs_sp.sh:478
 msgid "With what suffix."
 msgstr ""
 
-#: btrfs_sp.sh:336 btrfs_sp.sh:553
+#: btrfs_sp.sh:336 btrfs_sp.sh:554
 msgid "Written by"
 msgstr ""
 
-#: btrfs_sp.sh:1089
+#: btrfs_sp.sh:1090
 msgid "YEAR"
 msgstr ""
 
-#: btrfs_sp.sh:3517
+#: btrfs_sp.sh:3518
 msgid "You might want to create one with command '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:1630
+#: btrfs_sp.sh:1631
 msgid "added"
 msgstr ""
 
-#: btrfs_sp.sh:402
+#: btrfs_sp.sh:403
 msgid "and have the following argument (in that order) :"
 msgstr ""
 
-#: btrfs_sp.sh:1018 btrfs_sp.sh:1021
+#: btrfs_sp.sh:1019 btrfs_sp.sh:1022
 msgid "argument '%s' is not defined"
 msgstr ""
 
-#: btrfs_sp.sh:58 btrfs_sp.sh:375
-msgid ""
-"backup/restore a folder (BTRFS subvolume) at predefined moments with "
-"archiving and pruning."
+#: btrfs_sp.sh:58 btrfs_sp.sh:376
+msgid "backup and restore instantly with ease your BTRFS filesystem."
 msgstr ""
 
-#: btrfs_sp.sh:3127
+#: btrfs_sp.sh:3128
 msgid "binary '%s' not found"
 msgstr ""
 
@@ -685,91 +683,91 @@ msgid ""
 "but instead the whole BTRFS tree is mounted at PATH (with the subvolume '%s')."
 msgstr ""
 
-#: btrfs_sp.sh:1632
+#: btrfs_sp.sh:1633
 msgid "changed"
 msgstr ""
 
-#: btrfs_sp.sh:1015
+#: btrfs_sp.sh:1016
 msgid "configuration file '%s' already exists"
 msgstr ""
 
-#: btrfs_sp.sh:3372
+#: btrfs_sp.sh:3373
 msgid "configuration file '%s' doesn't exist or isn't readable"
 msgstr ""
 
-#: btrfs_sp.sh:3531
+#: btrfs_sp.sh:3532
 msgid "configuration not found ('%s' doesn't exist)"
 msgstr ""
 
-#: btrfs_sp.sh:3408
+#: btrfs_sp.sh:3409
 msgid "configurations directory is not defined (use variable '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:404
+#: btrfs_sp.sh:405
 msgid "current free space available (in %s)"
 msgstr ""
 
-#: btrfs_sp.sh:401
+#: btrfs_sp.sh:402
 msgid "default"
 msgstr ""
 
-#: btrfs_sp.sh:1631
+#: btrfs_sp.sh:1632
 msgid "deleted"
 msgstr ""
 
-#: btrfs_sp.sh:893 btrfs_sp.sh:931
+#: btrfs_sp.sh:894 btrfs_sp.sh:932
 msgid "failed to create snapshot (ro) from '%s' to '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:912
+#: btrfs_sp.sh:913
 msgid "failed to create snapshot (rw) from '%s' to '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:1748
+#: btrfs_sp.sh:1749
 msgid "failed to delete new snapshot '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2748
+#: btrfs_sp.sh:2749
 msgid "failed to delete savepoint '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:902
+#: btrfs_sp.sh:903
 msgid "failed to delete subvolume '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2578
+#: btrfs_sp.sh:2579
 msgid "failed to get a date from filename '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2850 btrfs_sp.sh:2867
+#: btrfs_sp.sh:2851 btrfs_sp.sh:2868
 msgid "failed to get avalable free space for '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2827
+#: btrfs_sp.sh:2828
 msgid "failed to get mount point for '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2081
+#: btrfs_sp.sh:2082
 msgid "failed to get the date from the savepoint '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:1701 btrfs_sp.sh:1801 btrfs_sp.sh:2014
+#: btrfs_sp.sh:1702 btrfs_sp.sh:1802 btrfs_sp.sh:2015
 msgid "failed to get the list of backups for directory '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2098
+#: btrfs_sp.sh:2099
 msgid "failed to get the week days for datetime '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2947
+#: btrfs_sp.sh:2948
 msgid "failed to get week day of datetime '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:783
+#: btrfs_sp.sh:784
 msgid "failed to snapshot '%s' to '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:1027
+#: btrfs_sp.sh:1028
 msgid "folder '%s' is not a BTRFS subvolume"
 msgstr ""
 
@@ -781,39 +779,39 @@ msgstr ""
 msgid "instead of paths relative to mounted root filesystem"
 msgstr ""
 
-#: btrfs_sp.sh:2988
+#: btrfs_sp.sh:2989
 msgid "invalid boolean value '%s' (variable: '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:3442
+#: btrfs_sp.sh:3443
 msgid "invalid command '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:1009 btrfs_sp.sh:3547
+#: btrfs_sp.sh:1010 btrfs_sp.sh:3548
 msgid "invalid configuration's name '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:725 btrfs_sp.sh:844
+#: btrfs_sp.sh:726 btrfs_sp.sh:845
 msgid "invalid date option '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2979
+#: btrfs_sp.sh:2980
 msgid "invalid decimal number value '%s' (variable: '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:3222
+#: btrfs_sp.sh:3223
 msgid "invalid option"
 msgstr ""
 
-#: btrfs_sp.sh:2970
+#: btrfs_sp.sh:2971
 msgid "invalid positive number value '%s' (variable: '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:3322 btrfs_sp.sh:3327 btrfs_sp.sh:3330 btrfs_sp.sh:3333
+#: btrfs_sp.sh:3323 btrfs_sp.sh:3328 btrfs_sp.sh:3331 btrfs_sp.sh:3334
 msgid "invalid value '%s' for option %s"
 msgstr ""
 
-#: btrfs_sp.sh:3186
+#: btrfs_sp.sh:3187
 msgid "invalid value for global variable '%s' (%s)"
 msgstr ""
 
@@ -823,7 +821,7 @@ msgid ""
 "not coherent, and then,"
 msgstr ""
 
-#: btrfs_sp.sh:405
+#: btrfs_sp.sh:406
 msgid "limit of free space required (in %s)"
 msgstr ""
 
@@ -831,15 +829,15 @@ msgstr ""
 msgid "meaning :"
 msgstr ""
 
-#: btrfs_sp.sh:3516
+#: btrfs_sp.sh:3517
 msgid "no configuration yet."
 msgstr ""
 
-#: btrfs_sp.sh:3421
+#: btrfs_sp.sh:3422
 msgid "no configurations directory at '%s'"
 msgstr ""
 
-#: btrfs_sp.sh:2875
+#: btrfs_sp.sh:2876
 msgid "not enough free space for path '%s'"
 msgstr ""
 
@@ -847,27 +845,27 @@ msgstr ""
 msgid "offline using a LIVE system if properly stopped before"
 msgstr ""
 
-#: btrfs_sp.sh:3295
+#: btrfs_sp.sh:3296
 msgid "options '%s' and '%s' can not be specified simultaneously"
 msgstr ""
 
-#: btrfs_sp.sh:1024
+#: btrfs_sp.sh:1025
 msgid "path '%s' is not a folder"
 msgstr ""
 
-#: btrfs_sp.sh:403
+#: btrfs_sp.sh:404
 msgid "path of the file or directory considered"
 msgstr ""
 
-#: btrfs_sp.sh:3458
+#: btrfs_sp.sh:3459
 msgid "persistent log is not defined (use variable '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:2887
+#: btrfs_sp.sh:2888
 msgid "pruning savepoints have failed"
 msgstr ""
 
-#: btrfs_sp.sh:1661 btrfs_sp.sh:1669 btrfs_sp.sh:1672
+#: btrfs_sp.sh:1662 btrfs_sp.sh:1670 btrfs_sp.sh:1673
 msgid "pruning savepoints using '%s' algorithm has failed"
 msgstr ""
 
@@ -880,49 +878,49 @@ msgid ""
 "replacing error and message functions with the one from the helper script"
 msgstr ""
 
-#: btrfs_sp.sh:973
+#: btrfs_sp.sh:974
 msgid "savepoint '%s' doesn't exist"
 msgstr ""
 
-#: btrfs_sp.sh:3594 btrfs_sp.sh:3598
+#: btrfs_sp.sh:3595 btrfs_sp.sh:3599
 msgid "savepoints dir is not defined (use variable '%s')"
 msgstr ""
 
-#: btrfs_sp.sh:2897
+#: btrfs_sp.sh:2898
 msgid "shell script '%s' doesn't exist"
 msgstr ""
 
-#: btrfs_sp.sh:2906
+#: btrfs_sp.sh:2907
 msgid "shell script '%s' has failed (arguments: %s)"
 msgstr ""
 
-#: btrfs_sp.sh:512
+#: btrfs_sp.sh:513
 msgid "the BTRFS subvolume considered for the operation"
 msgstr ""
 
-#: btrfs_sp.sh:717
+#: btrfs_sp.sh:718
 msgid "the folder at '%s' is not a subvolume"
 msgstr ""
 
-#: btrfs_sp.sh:750 btrfs_sp.sh:867 btrfs_sp.sh:923
+#: btrfs_sp.sh:751 btrfs_sp.sh:868 btrfs_sp.sh:924
 msgid "the savepoint '%s' already exists ! (bug ?)"
 msgstr ""
 
-#: btrfs_sp.sh:822
+#: btrfs_sp.sh:823
 msgid "the savepoint '%s' doesn't exist"
 msgstr ""
 
-#: btrfs_sp.sh:833
+#: btrfs_sp.sh:834
 msgid ""
 "the savepoint '%s' is a link to '%s', that doesn't belong to savepoints dir "
 "'%s'"
 msgstr ""
 
-#: btrfs_sp.sh:513
+#: btrfs_sp.sh:514
 msgid "the savepoint considered for the operation"
 msgstr ""
 
-#: btrfs_sp.sh:3139
+#: btrfs_sp.sh:3140
 msgid "the version '%s' is required for the binary '%s'"
 msgstr ""
 
@@ -934,14 +932,14 @@ msgstr ""
 msgid "trying to source the helper function script at :"
 msgstr ""
 
-#: btrfs_sp.sh:516
+#: btrfs_sp.sh:517
 msgid "using a custom shell script"
 msgstr ""
 
-#: btrfs_sp.sh:518
+#: btrfs_sp.sh:519
 msgid "using a shell command ignoring the 2 arguments"
 msgstr ""
 
-#: btrfs_sp.sh:1061
+#: btrfs_sp.sh:1062
 msgid "with default values"
 msgstr ""

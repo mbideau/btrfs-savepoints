@@ -199,7 +199,7 @@ test__get_savepoint_timestamp()
     _tmp="$(mktemp)"
     assertTrue "returns true" "(get_savepoint_timestamp '2020-01-01_00h00m00' 2>'$_tmp')"
     assertEquals "empty STDERR" '' "$(cat "$_tmp")"
-    assertEquals "1577833200" "$(get_savepoint_timestamp '2020-01-01_00h00m00')"
+    assertEquals "$(date -d "2020-01-01T00:00:00" '+%s')" "$(get_savepoint_timestamp '2020-01-01_00h00m00')"
     assertFalse "invalid input should fail" "(LC_ALL=C get_savepoint_timestamp 'invalid' 2>'$_tmp')"
     assertContains "Fatal error: failed to get a date from filename 'invalid'" \
         "$(cut -c 21- "$_tmp")"
@@ -244,7 +244,7 @@ test__is_btrfs_subvolume()
     btrfs subvolume snapshot -r "$TEST_SUBVOL_DIR_DATA" "$TEST_SUBVOL_DIR_BACKUPS"/data/0 >/dev/null
     assertTrue "snapshot" "is_btrfs_subvolume '$TEST_SUBVOL_DIR_BACKUPS/data/0'"
     ln -s '0' "$TEST_SUBVOL_DIR_BACKUPS"/data/1
-    assertFalse "link" "is_btrfs_subvolume '$TEST_SUBVOL_DIR_BACKUPS/data/1'"
+    assertTrue "link" "is_btrfs_subvolume '$TEST_SUBVOL_DIR_BACKUPS/data/1'"
 }
 
 test__get_free_space_gb()

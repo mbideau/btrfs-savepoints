@@ -574,6 +574,12 @@ ENDCAT
 # sets all required defautls variables and exports
 set_default_vars()
 {
+    # use sudo when required
+    use_sudo=
+    if [ "$(id -u)" != '0' ]; then
+        use_sudo=sudo
+    fi
+
     # current script infos
     THIS_SCRIPT_PATH="$(realpath "$0")"
     THIS_SCRIPT_NAME="$(basename "$THIS_SCRIPT_PATH")"
@@ -898,7 +904,7 @@ cmd_restore()
 
     # remove existing subvolume
     debug "   removing the subvolume '%s'" "$_subvol_path"
-    if ! btrfs subvolume delete --commit-after "$_subvol_path" >/dev/null; then
+    if ! $use_sudo btrfs subvolume delete --commit-after "$_subvol_path" >/dev/null; then
         log "[$NAME] ERR failed to delete subvolume '%s'" "$_subvol_path"
         "$fun_fatal_error" "$(__ "failed to delete subvolume '%s'" "$_subvol_path")"
     fi
@@ -1346,7 +1352,7 @@ cmd_subvol_diff()
     # removing the temporary snapshot
     if [ -e "$_temp_snap_path" ]; then
         debug "${_ind}Removing the temporary snapshot '%s'" "$_temp_snap_path"
-        btrfs subvolume delete --commit-after "$_temp_snap_path" >/dev/null || true
+        $use_sudo btrfs subvolume delete --commit-after "$_temp_snap_path" >/dev/null || true
     fi
     [ ! -d "$_temp_snap_dir" ] || rmdir "$_temp_snap_dir"
 
@@ -1515,7 +1521,7 @@ btrfs_subvolumes_diff()
         _tmp_file_send="$(mktemp)"
 
         # exporting the changes like we will send it somewhere
-        if ! btrfs send --quiet --no-data -p "$_ref" "$_cmp" -f "$_tmp_file_send"; then
+        if ! $use_sudo btrfs send --quiet --no-data -p "$_ref" "$_cmp" -f "$_tmp_file_send"; then
             rm -f "$_tmp_file_send"
             "$fun_fatal_error" "$(__ "failed to compare btrfs subvolumes '%s' to '%s' "`
                               `"('btrfs send' command has failed)" "$_ref" "$_cmp")"
@@ -1525,7 +1531,7 @@ btrfs_subvolumes_diff()
         _tmp_file_receive="$(mktemp)"
 
         # receive the changes and dump them (instead of applying them)
-        if ! btrfs receive --quiet --dump > "$_tmp_file_receive" < "$_tmp_file_send"; then
+        if ! $use_sudo btrfs receive --quiet --dump > "$_tmp_file_receive" < "$_tmp_file_send"; then
             rm -f "$_tmp_file_send" "$_tmp_file_receive"
             "$fun_fatal_error" "$(__ "failed to compare btrfs subvolumes '%s' to '%s' "`
                               `"('btrfs receive' command has failed)" "$_ref" "$_cmp")"
@@ -2745,7 +2751,7 @@ remove_savepoint()
 
             # remove the savepoint
             debug "${_ind}removing savepoint '$_sp_fn'"
-            if ! btrfs subvolume delete --commit-after "$1" >/dev/null; then
+            if ! $use_sudo btrfs subvolume delete --commit-after "$1" >/dev/null; then
                 "$fun_fatal_error" "$(__ "failed to delete savepoint '%s'" "$_sp_fn")"
             fi
         fi

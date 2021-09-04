@@ -1,31 +1,57 @@
 # file meant to be included by other tests script
 
 if [ "$BTRFSSP" = '' ]; then
-    if ! BTRFSSP="$(which btrfs-sp 2>/dev/null)"; then
-        if [ -x "$THIS_DIR/btrfs_sp.sh" ]; then
+    if ! BTRFSSP="$(command -v btrfs-sp 2>/dev/null)"; then
+        if [ -e "$THIS_DIR/btrfs_sp.sh" ]; then
             BTRFSSP="$THIS_DIR/btrfs_sp.sh"
-        else
-            echo "Fatal error: failed to find binary 'btrfs-sp'" >&2
-            exit 1
         fi
     fi
+fi
+if [ "$BTRFSSP" = '' ]; then
+    echo "Fatal error: failed to find binary 'btrfs-sp'" >&2
+    exit 1
+elif [ ! -e "$BTRFSSP" ]; then
+    echo "Fatal error: '$BTRFSSP' doesn't exist" >&2
+    exit 1
+elif [ ! -x "$BTRFSSP" ]; then
+    echo "Fatal error: '$BTRFSSP' is not executable" >&2
+    exit 1
 fi
 
 if [ "$SHUNIT2" = '' ]; then
-    if ! SHUNIT2="$(which shunit2)"; then
+    if ! SHUNIT2="$(command -v shunit2 2>/dev/null)"; then
         if [ -r "$(dirname "$THIS_DIR")/shunit2/shunit2" ]; then
             SHUNIT2="$(dirname "$THIS_DIR")/shunit2/shunit2"
-        else
-            echo "Fatal error: failed to find shell script 'shunit2'" >&2
-            exit 1
         fi
     fi
 fi
+if [ "$SHUNIT2" = '' ]; then
+    echo "Fatal error: failed to find shell script 'shunit2'" >&2
+    exit 1
+elif [ ! -e "$SHUNIT2" ]; then
+    echo "Fatal error: '$SHUNIT2' doesn't exist" >&2
+    exit 1
+fi
 
 # configuration of the test environment
+if [ "$TMPDIR" = '' ]; then
+    TMPDIR="$THIS_DIR"/.tmp
+fi
+remove_test_dir=false
+if [ "$TEST_DIR" = '' ]; then
+    TEST_DIR="$THIS_DIR"/testdir
+fi
 
-# create the tests directory
-TEST_DIR="$THIS_DIR/tests"
+use_sudo=
+if [ "$(id -u)" != '0' ]; then
+    echo "Using sudo"
+    use_sudo=sudo
+fi
+
+echo "Tmp directory: '$TMPDIR'"
+[ ! -d "$TMPDIR" ] && mkdir -p "$TMPDIR"
+$use_sudo chown "$USER" "$TMPDIR"
+$use_sudo chmod u=rwx "$TMPDIR"
 
 # conf
 TEST_CONF_GLOBAL="$TEST_DIR"/test.conf
@@ -356,7 +382,10 @@ __oneTimeSetUp()
     if [ ! -d "$TEST_DIR" ]; then
         __debug "Creating directory: '$TEST_DIR'\n"
         mkdir "$TEST_DIR"
+        remove_test_dir=true
     fi
+    $use_sudo chown "$USER" "$TEST_DIR"
+    $use_sudo chmod u=rwx "$TEST_DIR"
 
     # define the relatives paths from TEST_DIR mount point
 
@@ -397,8 +426,8 @@ __oneTimeSetUp()
 __oneTimeTearDown()
 {
     # remove the tests dir
-    if [ -d "$TEST_DIR" ]; then
-        __debug "Removing directory: '$TEST_DIR'\n"
+    if [ -d "$TEST_DIR" ] && [ "$remove_test_dir" = 'true' ]; then
+        __debug "Removing directory: '%s'\\n" "$TEST_DIR"
         rmdir "$TEST_DIR"
     fi
 }

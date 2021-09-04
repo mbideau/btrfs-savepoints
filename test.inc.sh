@@ -460,18 +460,18 @@ __tearDown()
                 -not -path "$TEST_SUBVOL_DIR_BACKUPS"/data -exec rm -f '{}' \;
             find "$TEST_SUBVOL_DIR_BACKUPS"/data -maxdepth 1 -type d \
                 -not -path "$TEST_SUBVOL_DIR_BACKUPS"/data \
-                -exec btrfs subvolume delete --commit-after '{}' \; >/dev/null
+                -exec $use_sudo btrfs subvolume delete --commit-after '{}' \; >/dev/null
             __debug "      removing the 'data' backup dir\n"
             rmdir "$TEST_SUBVOL_DIR_BACKUPS"/data
         fi
         __debug "      removing the 'backups' subvolume\n"
-        btrfs subvolume delete --commit-after "$TEST_SUBVOL_DIR_BACKUPS" >/dev/null
+        $use_sudo btrfs subvolume delete --commit-after "$TEST_SUBVOL_DIR_BACKUPS" >/dev/null
     fi
 
     # remove all the existing/previous data
     if [ -d "$TEST_SUBVOL_DIR_DATA" ]; then
         __debug "   removing the 'data' subvolume\n"
-        btrfs subvolume delete --commit-after "$TEST_SUBVOL_DIR_DATA" >/dev/null
+        $use_sudo btrfs subvolume delete --commit-after "$TEST_SUBVOL_DIR_DATA" >/dev/null
     fi
 
     # remove all the existing/previous configuration

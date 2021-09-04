@@ -1,0 +1,50 @@
+---
+# This is a basic workflow to help you get started with Actions
+
+name: Build
+
+# Controls when the action will run.
+on:  # yamllint disable-line rule:truthy
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  # This workflow contains a single job called "build"
+  build:
+
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Checks-out the gimme-a-man repo
+      - uses: actions/checkout@v2
+        with:
+          # Repository name with owner. For example, actions/checkout
+          # Default: ${{ github.repository }}
+          repository: mbideau/gimme-a-man
+          # Relative path under $GITHUB_WORKSPACE to place the repository
+          path: gimme-a-man
+
+      # Install required packages dependencies
+      - name: Install required packages dependencies
+        run: |
+          DEBIAN_FRONTEND=noninteractive sudo apt-get -q -y install \
+            btrfs-progs git make gettext grep gzip tar sed mawk coreutils \
+            whiptail
+
+      # Runs make
+      - name: Run make
+        run: GIMME_A_MAN="$(pwd)"/gimme-a-man/gimme_a_man.sh make

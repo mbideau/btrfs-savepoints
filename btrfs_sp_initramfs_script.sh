@@ -472,7 +472,8 @@ LOG_FILE_TMP="$(mktemp "/tmp/$(basename "$0" '.sh').log.XXXXXX")"
                             `"$(__ "the BTRFS SavePoint restoration GUI")"`
                             `"${_color_reset} "`
                             `"($(__ "%d seconds left" "$GUI_START_USER_INPUT_TIMEOUT_SEC")) ... "
-                        # shellcheck disable=SC2039,SC2162
+                        # TODO find a POSIX way to read withtout '-n' option
+                        # shellcheck disable=SC2039,SC2162,SC3045
                         read -n "$GUI_START_KEY_LENGTH" -t "$GUI_START_USER_INPUT_TIMEOUT_SEC" -s \
                             _key_press || true
                         printf "\n\n"

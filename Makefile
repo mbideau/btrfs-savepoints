@@ -186,7 +186,7 @@ MSGMERGEFLAGS      ?=
 MSGMERGEFLAGS_ALL  := --quiet
 MGSCATFLAGS        ?=
 MGSCATFLAGS_ALL    := --sort-output --width=$(WIDTH)
-GZIPFLAGS          ?=
+GZIPFLAGS          ?= --force
 TARFLAGS           ?= --gzip
 SHELLCHECKFLAGS    ?=
 SHELLCHECKFLAGS_ALL:= --check-sourced --external-sources
@@ -245,7 +245,7 @@ define generate_man_from_script_help
 		--locale "$$_locale" \
 		$(GIMME_A_MAN_FLAGS) $(GIMME_A_MAN_FLAGS_ALL) --help-option "$$_opt_help" \
 		"$$(realpath "$(2)")" "$$_prog_name" "$$_prog_name $(PACKAGE_VERS)" $(MAN_SECTION) \
-	| $(GZIP) $(GZIPFLAGS) > "$(3)";
+		> "$(3)";
 endef
 
 # install a man
@@ -296,22 +296,26 @@ define create_or_update_translation_catalogue
 	fi
 endef
 
+# compress the man pages
+$(MAN_DIR)/%.texi.gz: $(MAN_DIR)/%.texi
+	@echo "## Compressing man page '$<' to '$@'"
+	@$(GZIP) $(GZIPFLAGS) "$<"
 
 # special case for english manual that do not depends on any translation but on script
-$(MAN_DIR)/$(PROGRAM_NAME).en.texi.gz: $(MAIN_SCRIPT)
+$(MAN_DIR)/$(PROGRAM_NAME).en.texi: $(MAIN_SCRIPT)
 	@$(call generate_man_from_script_help,en,$<,$@)
-$(MAN_DIR)/$(PROGRAM_NAME).conf.en.texi.gz: $(MAIN_SCRIPT)
+$(MAN_DIR)/$(PROGRAM_NAME).conf.en.texi: $(MAIN_SCRIPT)
 	@$(call generate_man_from_script_help,en,$<,$@,--help-conf)
-$(MAN_DIR)/$(GUI_PROG_NAME).en.texi.gz: $(GUI_SCRIPT)
+$(MAN_DIR)/$(GUI_PROG_NAME).en.texi: $(GUI_SCRIPT)
 	@$(call generate_man_from_script_help,en,$<,$@)
 
 
 # manuals depends on translations
-$(MAN_DIR)/$(PROGRAM_NAME).%.texi.gz: $(MAIN_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(PROGRAM_NAME).mo
+$(MAN_DIR)/$(PROGRAM_NAME).%.texi: $(MAIN_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(PROGRAM_NAME).mo
 	@$(call generate_man_from_script_help,$*,$<,$@)
-$(MAN_DIR)/$(PROGRAM_NAME).conf.%.texi.gz: $(MAIN_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(PROGRAM_NAME).mo
+$(MAN_DIR)/$(PROGRAM_NAME).conf.%.texi: $(MAIN_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(PROGRAM_NAME).mo
 	@$(call generate_man_from_script_help,$*,$<,$@,--help-conf)
-$(MAN_DIR)/$(GUI_PROG_NAME).%.texi.gz: $(GUI_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(GUI_PROG_NAME).mo
+$(MAN_DIR)/$(GUI_PROG_NAME).%.texi: $(GUI_SCRIPT) $(LOCALE_DIR)/%/LC_MESSAGES/$(GUI_PROG_NAME).mo
 	@$(call generate_man_from_script_help,$*,$<,$@)
 
 

@@ -14,14 +14,14 @@ There are absolutely no dependencies other than the `GNU coreutils`, except the 
 And I strongly recommend using a BTRFS diff utility like my
 [btrfs-diff-sh](https://github.com/mbideau/btrfs-diff-sh), to get more insight about save points.
 
-Backups, are just *BTRFS snapshots*, respecting some naming convention, and in this project we
+Backups, are *BTRFS snapshots*, respecting some naming convention, and in this project we
 call them *save points*, hence the name of the program _btrfs-**sp**_.
 
 **Table of content**
 <!-- toc -->
 
 - [Usage](#usage)
-- [Aren't already thousands of backup solutions out there (including for BTRFS) ?! Yes, but not like this one](#arent-already-thousands-of-backup-solutions-out-there-including-for-btrfs--yes-but-not-like-this-one)
+- [Aren't already thousands of backup solutions out there ?! Yes, but not like this one](#arent-already-thousands-of-backup-solutions-out-there--yes-but-not-like-this-one)
 - [Very easy to use: setup and forget it (after testing it :wink:)](#very-easy-to-use-setup-and-forget-it-after-testing-it-wink)
 - [Installation and first run](#installation-and-first-run)
 - [Getting started: to backup the root filesystem and restore a test subvolume](#getting-started-to-backup-the-root-filesystem-and-restore-a-test-subvolume)
@@ -504,11 +504,13 @@ see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
 Please note that this project is released with a *Contributor Code of Conduct*. By participating in
 this project you agree to abide by its terms.
 
+
 ## About this document
 
 ### License: CC-BY-SA
 
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)  
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)
+](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Copyright © 2020-2021 Michael Bideau, France  
 This document is licensed under a

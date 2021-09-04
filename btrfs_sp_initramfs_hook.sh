@@ -79,6 +79,7 @@ if [ "$1" = 'prereqs' ]; then
 fi
 
 # source initramfs helper functions for hooks
+# shellcheck disable=SC1091
 . /usr/share/initramfs-tools/hook-functions
 
 # update the path to find system binaries

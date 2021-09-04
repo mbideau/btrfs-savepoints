@@ -17,6 +17,24 @@ And I strongly recommend using a BTRFS diff utility like my
 Backups, are *BTRFS snapshots*, respecting some naming convention, and in this project we
 call them *save points*, hence the name of the program _btrfs-**sp**_.
 
+![Release](https://img.shields.io/github/v/release/mbideau/btrfs-savepoints)
+![Release Date](https://img.shields.io/github/release-date/mbideau/btrfs-savepoints)  
+[![Build](https://github.com/mbideau/btrfs-savepoints/actions/workflows/build.yml/badge.svg)
+](https://github.com/mbideau/btrfs-savepoints/actions/workflows/build.yml)
+[![Test (unit tests)](https://github.com/mbideau/btrfs-savepoints/actions/workflows/test_unit.yml/badge.svg)
+](https://github.com/mbideau/btrfs-savepoints/actions/workflows/test_unit.yml)
+[![Test (ux simple)](https://github.com/mbideau/btrfs-savepoints/actions/workflows/test_simple.yml/badge.svg)
+](https://github.com/mbideau/btrfs-savepoints/actions/workflows/test_simple.yml)
+[![Shellcheck](https://github.com/mbideau/btrfs-savepoints/actions/workflows/shellcheck.yml/badge.svg)
+](https://github.com/mbideau/btrfs-savepoints/actions/workflows/shellcheck.yml)
+![Shell POSIX](https://img.shields.io/badge/shell-POSIX-darkgreen)  
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)
+](http://www.gnu.org/licenses/gpl-3.0)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)
+](CODE_OF_CONDUCT.md)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)
+](https://conventionalcommits.org)
+
 **Table of content**
 <!-- toc -->
 

@@ -3,6 +3,9 @@
 set -e
 
 
+# TODO make it compatible with the Github action test environment
+#      specially, removes hard coded path like '/mnt/toplevel_subvol'
+
 # shunit2 functions
 
 oneTimeSetUp()    { __oneTimeSetUp; }

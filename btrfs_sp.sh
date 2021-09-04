@@ -2794,6 +2794,7 @@ is_safe_savepoint()
 }
 
 # return 0 if the path is a subvolume
+# if it is a symlink consider the realpath
 # @from: https://stackoverflow.com/a/25908150
 is_btrfs_subvolume()
 {

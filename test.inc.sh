@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # file meant to be included by other tests script
 
 if [ "$BTRFSSP" = '' ]; then

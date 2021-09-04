@@ -9,3 +9,6 @@ rule 'MD009', :br_spaces => 2
 
 # Allow multiple consecutive blank lines (specially in code blocks)
 exclude_rule 'MD012'
+
+# Allow heading terminaison with punctuation and emoji tag
+exclude_rule 'MD026'

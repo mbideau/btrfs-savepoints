@@ -454,7 +454,8 @@ Welcome to the user friendly paradigm :wink:
 
 ### License: CC-BY-SA
 
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)  
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)
+](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Copyright © 2020-2021 Michael Bideau, France  
 This document is licensed under a

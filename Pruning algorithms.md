@@ -142,22 +142,23 @@ What backups/savepoints should be considered safe (and so having the **.safe** s
   tell so I recommend avoiding it.  
 
 What is the use of the safe VS unsafe backups ?  
-> Because safe backups guaranty you that the filesystem was clean (filesystem remounted read-only) and no service where running, you
-can assume it was in a coherent state, and you can restore it with strong confidence that you will
-recover a fully functioning system.  
+> Because safe backups guaranty you that the filesystem was clean (filesystem remounted read-only)
+and no service where running, you can assume it was in a coherent state, and you can restore it with
+strong confidence that you will recover a fully functioning system.  
 
-> With unsafe backup (taken when system was online and filesystem mounted read-write), you have no guaranty that the backup was not taken
-in the middle of an operation. If the service concerned by that half backuped operation do not
-handle transactional operations and a way to prunes ones that are not committed, if you restore your
-system with that unsafe backup, that service might not work anymore, or produce unpredictable
-results. So you might end up with a malfunctioning system.
+> With unsafe backup (taken when system was online and filesystem mounted read-write), you have no
+guaranty that the backup was not taken in the middle of an operation. If the service concerned by
+that half backuped operation do not handle transactional operations and a way to prunes ones that
+are not committed, if you restore your system with that unsafe backup, that service might not work
+anymore, or produce unpredictable results. So you might end up with a malfunctioning system.
 
 
 ## About this document
 
 ### License: CC-BY-SA
 
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)  
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)
+](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Copyright © 2020-2021 Michael Bideau, France  
 This document is licensed under a

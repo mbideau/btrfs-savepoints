@@ -204,7 +204,8 @@
   - + simplicity and complexity well managed
   - + no dependencies
   - + able to implement complexe retention strategies (hierarchical by default)
-  - + let the user handle the order of the execution (prune first, then backup, or the over way, and more)
+  - + let the user handle the order of the execution (prune first, then backup, or the over way, and
+    more)
   - + dry run
   - + lean code
   - - no minimization of snapshots number
@@ -263,7 +264,8 @@ Like re-inventing the wheel, but [squared, without a catenary road](https://math
 
 ### License: CC-BY-SA
 
-[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)  
+[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)
+](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Copyright © 2020-2021 Michael Bideau, France  
 This document is licensed under a

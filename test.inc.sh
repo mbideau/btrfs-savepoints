@@ -85,7 +85,8 @@ __debug()
 # return a random number
 __get_random()
 {
-    # shellcheck disable=SC2039
+    # TODO find a POSIX way to generate a random number
+    # shellcheck disable=SC2039,SC3028
     _rand="$RANDOM"
     if [ "$_rand" = '' ] && command -v shuf >/dev/null; then
         _rand="$(shuf --head-count=1 --input-range=0-999)"

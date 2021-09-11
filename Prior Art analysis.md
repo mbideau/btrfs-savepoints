@@ -1,225 +1,225 @@
-# btrfs-savepoints - Backup and Restore instantly with ease your BTRFS base filesystem
+# btrfs-savepoints - Backup and Restore instantly with ease your BTRFS filesystem
 
-## Review of the existing project
+## Review of the existing projects
 
 ### Restore
 
 - [btrroll](https://github.com/SpencerMichaels/btrroll)
 
-  - + it is executed in initrd, it seems to do the job well (not tested though)
-  - + allow to add a description to the snapshots
-  - - not configurable enough for me (fixed root.d/snapshots and symlinks)
-  - - manage the bootloader entries itself (and specificaly systemd-boot)
-  - - seems to only take care of restoring one subvolume (not multiple at once)
+  - :heavy_plus_sign: it is executed in initrd, it seems to do the job well (not tested though)
+  - :heavy_plus_sign: allow to add a description to the snapshots
+  - :heavy_minus_sign: not configurable enough for me (fixed root.d/snapshots and symlinks)
+  - :heavy_minus_sign: manage the bootloader entries itself (and specificaly systemd-boot)
+  - :heavy_minus_sign: seems to only take care of restoring one subvolume (not multiple at once)
 
 
 ### Backup
 
 - [btrbk (perl)](https://github.com/digint/btrbk)
 
-  - + very simple configuration
-  - + lots of features
-  - - perl
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
+  - :heavy_plus_sign: very simple configuration
+  - :heavy_plus_sign: lots of features
+  - :heavy_minus_sign: perl
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
 
 - [bktr (rust)](https://github.com/yuqio/bktr)
 
-  - - no documentation at all
+  - :heavy_minus_sign: no documentation at all
 
 - [sanoid (perl)](https://github.com/jimsalterjrs/sanoid)
 
-  - - no btrfs support (as I understand, because they claim btrfs is not stable, WTF)
+  - :heavy_minus_sign: no btrfs support (as I understand, because they claim btrfs is not stable, WTF)
 
 - [incrbtrfs (go)](https://github.com/drewkett/incrbtrfs)
 
-  - + can send snapshots to remote
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
+  - :heavy_plus_sign: can send snapshots to remote
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
 
 - [minisnap (go)](https://github.com/adrian-bl/minisnap)
 
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
 
 - [btrfs-time-machine (go)](https://github.com/sam701/btrfs-time-machine)
 
-  - + very simple configuration
-  - - no documentation at all
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
+  - :heavy_plus_sign: very simple configuration
+  - :heavy_minus_sign: no documentation at all
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
 
 - [snapbtr](https://github.com/yvolchkov/snapbtr)
 
-  - + very smart retention strategy, by scoring / distance (same as the previous one)
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_plus_sign: very smart retention strategy, by scoring / distance (same as the previous one)
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
 
 - [snapbtrex (python)](https://github.com/yoshtec/snapbtrex)
 
-  - + very smart retention strategy, by scoring / distance (same as the previous one)
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_plus_sign: very smart retention strategy, by scoring / distance (same as the previous one)
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
 
 - [buttermanager (python)](https://github.com/egara/buttermanager)
 
-  - + integrates with grub-btrfs
+  - :heavy_plus_sign: integrates with grub-btrfs
 
 - [snap-in-time (python)](https://snap-in-time.readthedocs.io/en/latest/culling_explained.html)
 
-  - + very smart retention strategy, by progressively keep less and less daily/weekly snapshots
-  - + great documentation
-  - + does remote sending of the snapshots
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_plus_sign: very smart retention strategy, by progressively keep less and less daily/weekly snapshots
+  - :heavy_plus_sign: great documentation
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
 
 - [coward (python)](https://github.com/n-st/coward/blob/master/coward.example.yaml)
 
-  - + does remote sending of the snapshots
-  - ~ kind of a little rude (but complete) documentation (in a config file)
-  - - no minimization of snapshots number
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_plus_sign: kind of a little raw (but complete) documentation (in a config file)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [btr-backup (python)](https://github.com/klarsson/btr-backup)
 
-  - + does remote sending of the snapshots
-  - - kind of a wip
-  - - almost no doc
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_minus_sign: kind of a wip
+  - :heavy_minus_sign: almost no doc
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [btrfs-snappy (python)](https://github.com/patrickglass/btrfs-snappy)
 
-  - + does remote sending of the snapshots
-  - - kind of a wip
-  - - almost no doc
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_minus_sign: kind of a wip
+  - :heavy_minus_sign: almost no doc
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [UBackup (python)](https://github.com/UlrichBerntien/UBackup)
 
-  - + does remote sending of the snapshots
-  - - documentation introduction is great, but no doc for retention strategy
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_minus_sign: documentation introduction is great, but no doc for retention strategy
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [snapman (python)](https://github.com/mdomlop/snapman)
 
-  - + has a gui
-  - + great documentation
-  - + does remote sending of the snapshots
-  - + does snapshot minimization (diff with previous)
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: has a gui
+  - :heavy_plus_sign: great documentation
+  - :heavy_plus_sign: does remote sending of the snapshots
+  - :heavy_plus_sign: does snapshot minimization (diff with previous)
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [btrfs-backup (python)](https://github.com/d-e-s-o/btrfs-backup/tree/devel/btrfs-backup)
 
-  - + interesting use of filters
-  - + great documentation
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - simplistic retention strategy
+  - :heavy_plus_sign: interesting use of filters
+  - :heavy_plus_sign: great documentation
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: simplistic retention strategy
 
 - [plasma-backup (python)](https://github.com/m1kc/plasma-backup)
 
-  - + great documentation
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
-  - - simplistic retention strategy
-  - - overkill and too simple at the same time
+  - :heavy_plus_sign: great documentation
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [lazysnapshotter (python)](https://github.com/jwdev42/lazysnapshotter/blob/master/doc/lazysnapshotter.md)
 
-  - + management of LUKS container (but useless most of the time)
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
-  - - simplistic retention strategy
-  - - overkill and too simple at the same time
+  - :heavy_plus_sign: management of LUKS container (but useless most of the time)
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [manjaro-album (python)](https://github.com/philmmanjaro/manjaro-album)
 
-  - + try to update grub entries by replacing update-grub
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - no minimization of snapshots number
-  - - simplistic retention strategy
-  - - overkill and too simple at the same time
+  - :heavy_plus_sign: try to update grub entries by replacing update-grub
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [btrfs-snapshotter (python)](https://github.com/rb1205/btrfs-snapshotter)
 
-  - + very smart retention strategy, by progressively keep less and less daily/weekly snapshots
-  - + great documentation
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_plus_sign: very smart retention strategy, by progressively keep less and less daily/weekly snapshots
+  - :heavy_plus_sign: great documentation
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
 
 - [btrfs-snapshot-backup-manager (python)](https://github.com/sww1235/btrfs-snapshot-backup-manager)
 
-  - ~ try to mimic snapper (I don't actually feal that is a great point)
-  - + command to diff snapshots (but unused)
-  - - python (not runnable in initrd without embeding the python binary)
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - overkill and too simple at the same time
+  - :wavy_dash: try to mimic snapper (I don't actually feel that is a great point)
+  - :heavy_plus_sign: command to diff snapshots (but unused)
+  - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [btrfs-snapshot-rotation (shell)](https://github.com/mmehnert/btrfs-snapshot-rotation)
 
-  - + one of the oldest (a lot of other tools do no improvment over this old one)
-  - - simplistic retention strategy
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_plus_sign: one of the oldest (a lot of other tools do no improvment over this old one)
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
 
 - [adlibre-backup (shell)](https://github.com/adlibre/adlibre-backup)
 
-  - + lots of features
-  - + great documentation
-  - - simplistic retention strategy
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - overkill and too simple at the same time
+  - :heavy_plus_sign: lots of features
+  - :heavy_plus_sign: great documentation
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [snazzer (shell)](https://github.com/csirac2/snazzer)
 
-  - + lots of features
-  - + great documentation
-  - - simplistic retention strategy
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - overkill and too simple at the same time
+  - :heavy_plus_sign: lots of features
+  - :heavy_plus_sign: great documentation
+  - :heavy_minus_sign: simplistic retention strategy
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: overkill and too simple at the same time
 
 - [btrfs-backup (shell)](https://github.com/3coma3/btrfs-backup)
 
-  - + one of the best
-  - + simplicity and complexity well managed
-  - + no dependencies
-  - + able to implement complexe retention strategies (hierarchical by default)
-  - + let the user handle the order of the execution (prune first, then backup, or the over way, and
+  - :heavy_plus_sign: one of the best
+  - :heavy_plus_sign: simplicity and complexity well managed
+  - :heavy_plus_sign: no dependencies
+  - :heavy_plus_sign: able to implement complexe retention strategies (hierarchical by default)
+  - :heavy_plus_sign: let the user handle the order of the execution (prune first, then backup, or the over way, and
     more)
-  - + dry run
-  - + lean code
-  - - no minimization of snapshots number
-  - - no way to differenciate between safe snapshots and unsafe one in retention strategy
-  - - bash (not runable in initramfs I think, busybox use dash)
+  - :heavy_plus_sign: dry run
+  - :heavy_plus_sign: lean code
+  - :heavy_minus_sign: no minimization of snapshots number
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: bash (not runable in initramfs I think, busybox use dash)
 
 - [btrfs-auto-snapshot (shell)](https://github.com/mk01/btrfs-auto-snapshot)
 
-  - ~ mimics zfs autobackup
-  - + lean code
-  - + old (so others could have extended this one instead of duplicating effort)
-  - + can flag snapshots to be excluded from retention
-  - - miss rollbacks (the whole point)
-  - - require a specific fs structure mixing data and snapshots (I personaly don't like it)
+  - :wavy_dash: mimics zfs autobackup
+  - :heavy_plus_sign: lean code
+  - :heavy_plus_sign: old (so others could have extended this one instead of duplicating effort)
+  - :heavy_plus_sign: can flag snapshots to be excluded from retention
+  - :heavy_minus_sign: miss rollbacks (the whole point)
+  - :heavy_minus_sign: require a specific fs structure mixing data and snapshots (I personaly don't like it)
 
 
 ### Extra / interesting

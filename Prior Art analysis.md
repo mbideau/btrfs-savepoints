@@ -67,11 +67,12 @@
 
 - [snap-in-time (python)](https://snap-in-time.readthedocs.io/en/latest/culling_explained.html)
 
-  - :heavy_plus_sign: very smart retention strategy, by progressively keep less and less daily/weekly snapshots
+  - :heavy_plus_sign: very smart retention strategy, by keeping less and less daily/weekly snapshots
   - :heavy_plus_sign: great documentation
   - :heavy_plus_sign: does remote sending of the snapshots
   - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
-  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention strategy
+  - :heavy_minus_sign: no way to differenciate between safe snapshots and unsafe one in retention
+    strategy
 
 - [coward (python)](https://github.com/n-st/coward/blob/master/coward.example.yaml)
 
@@ -158,7 +159,7 @@
 
 - [btrfs-snapshotter (python)](https://github.com/rb1205/btrfs-snapshotter)
 
-  - :heavy_plus_sign: very smart retention strategy, by progressively keep less and less daily/weekly snapshots
+  - :heavy_plus_sign: very smart retention strategy, by keeping less and less daily/weekly snapshots
   - :heavy_plus_sign: great documentation
   - :heavy_minus_sign: python (not runnable in initrd without embeding the python binary)
   - :heavy_minus_sign: no minimization of snapshots number
@@ -204,8 +205,8 @@
   - :heavy_plus_sign: simplicity and complexity well managed
   - :heavy_plus_sign: no dependencies
   - :heavy_plus_sign: able to implement complexe retention strategies (hierarchical by default)
-  - :heavy_plus_sign: let the user handle the order of the execution (prune first, then backup, or the over way, and
-    more)
+  - :heavy_plus_sign: let the user handle the order of the execution (prune first, then backup, or
+    the over way, and more)
   - :heavy_plus_sign: dry run
   - :heavy_plus_sign: lean code
   - :heavy_minus_sign: no minimization of snapshots number
@@ -219,7 +220,8 @@
   - :heavy_plus_sign: old (so others could have extended this one instead of duplicating effort)
   - :heavy_plus_sign: can flag snapshots to be excluded from retention
   - :heavy_minus_sign: miss rollbacks (the whole point)
-  - :heavy_minus_sign: require a specific fs structure mixing data and snapshots (I personaly don't like it)
+  - :heavy_minus_sign: require a specific fs structure mixing data and snapshots (I personaly don't
+    like it)
 
 
 ### Extra / interesting

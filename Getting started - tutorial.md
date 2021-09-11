@@ -1,4 +1,4 @@
-# btrfs-savepoints - Backup and Restore instantly with ease your BTRFS base filesystem
+# btrfs-savepoints - Backup and Restore instantly with ease your BTRFS filesystem
 
 ## A tutorial to quickly be up and running
 

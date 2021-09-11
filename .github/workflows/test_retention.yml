@@ -77,9 +77,9 @@ jobs:
           TMPDIR="$(pwd)"/.tmp TEST_DIR="$(pwd)"/test.mnt \
             SHUNIT2="$(pwd)"/shunit2/shunit2 \
             BTRFS_DIFF="$(pwd)"/btrfs_diff.sh sh test_retention.sh -- \
-              test__1WeekWithRestoration()
-              #test__2WeeksOfServerLikeActivitySimple() # too long, takes ~1h on Github servers
-              #test__2YearsSimple() # too long, takes ~6h on Github servers
+              test__1WeekWithRestoration
+              #test__2WeeksOfServerLikeActivitySimple # too long, takes ~1h on Github servers
+              #test__2YearsSimple # too long, takes ~6h on Github servers
 
       # Unmount
       - name: Unmounting the BTRFS image file

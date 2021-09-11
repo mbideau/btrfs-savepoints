@@ -44,7 +44,10 @@ do_backup()
 {
     __debug "   new savepoint at '%s'\n" "$2"
     "$BTRFSSP" --global-config "$TEST_CONF_GLOBAL" --config data backup \
-        --now "$1" --date "$2" --moment "$3" --suffix "$4" --skip-free-space
+        --now "$1" --date "$2" --moment "$3" --suffix "$4" --skip-free-space >/dev/null
+    if [ "$DEBUG_TEST" != 'true' ]; then
+        printf '%s' '.'
+    fi
 }
 
 # simulate one day of activity
@@ -146,6 +149,9 @@ simulate_session_for_a_day()
     fi
     do_backup "$_now" "$_now" "$_end_moment"
     _prev_end_moment="$_end_moment"
+    if [ "$DEBUG_TEST" != 'true' ]; then
+        echo
+    fi
 }
 
 # simulate one day of server activity
@@ -233,6 +239,9 @@ simulate_server_for_a_day()
             do_backup "$_now" "$_now" '' '.late_night_nothing'
         done
     done
+    if [ "$DEBUG_TEST" != 'true' ]; then
+        echo
+    fi
 }
 
 
